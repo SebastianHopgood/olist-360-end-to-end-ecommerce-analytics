@@ -12,7 +12,7 @@
 ## Project Workflow
 - Explain what i did and the process including the sections below: (include process Ask, Prepare, Process, Analyze, Share, Act)
 
-### (Break down sections uing 3 hashtags for each step)
+### (Break down sections using 3 hashtags for each step)
 -
 
 ## Key Insights & Recommnedataions 
