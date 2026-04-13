@@ -28,11 +28,18 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 - Bullet points on what key insights and what actions are best to take for the company
 
 ## 📦 Deliverables
-*** SQL Pipeline (BigQuery Scripts):**
-* 
+SOW (Scope of Work):
+* project_scope_of_work: Used to outline the project main goals and considerations.
+SQL Pipeline (BigQuery Scripts):
+* DML_Schema_Setup: Scripts used to define thable structures and data types.
+* SQL_Cleanning_Setup: Scripts used to clean and transform data.
+* DDL_Automation_Setup: Scripts used to insert, update, delete, and merge data across tables
+Dataset Metadata and Structure:
+* dataset_metadata: Files stored for company and analysts to understand the data.
 
 ### 📊  Dashboard Preview
-- Screenshot, image, or link to dashboard and explain it in simple
+* Olist_360_Dashboard: The source file for the interactive Power BI report.
+* Dashboard_Static_Report: A non-interactive version for quick viewing with no interactive slicers, buttons, or parameters applied.
 
 ## 📂 Project Structure
 -  List of folders and files in the project and what they are
