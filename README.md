@@ -28,4 +28,4 @@
 -  List of folders and files in the project and what they are
 
 ## Data Limitations & Future Work
-- List data constriants and future improvements to improve 
+- List data constriants and future improvements to improve or how i handeled data constriants
