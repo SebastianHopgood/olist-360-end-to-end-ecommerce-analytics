@@ -28,7 +28,8 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 - Bullet points on what key insights and what actions are best to take for the company
 
 ## 📦 Deliverables
-- list the deliverables and what folder there in inside the project, make sure to have a seperate section for dashboard preview since its the best thing to highlight
+*** SQL Pipeline (BigQuery Scripts):**
+* 
 
 ### 📊  Dashboard Preview
 - Screenshot, image, or link to dashboard and explain it in simple
