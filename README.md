@@ -1,10 +1,10 @@
 # Revenue-Sales-temp-name- (Project Title)
 
 ## Overview
-- What the project is, the goal, and why it matters (2-3 sentences)
+- What the project senerio is, the problem, and the value (2-3 sentences)
 
 ## Objectives
-- What am i trying to figure out + deliverables
+- What am i trying to figure out + deliverables (specific)
 
 ## Tools Used
 - What tools i used and for what purpose on why i used those tools
