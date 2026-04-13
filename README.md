@@ -1,4 +1,4 @@
-# Revenue-Sales-temp-name- (Project Title)
+# 🌐 Olist 360: E-Commerce End-to-End Business Intelligence
 
 ## 📋 Overview
 The project analyzes a real-world Brazilian ecommerce public dataset of orders made at the Olist Store, containing approximately 100,000 orders between 2016 and 2018. The dataset is structured across 9 relational tables covering customers, orders, locations, products, categories, sellers, and reviews, enabling a full view of the end-to-end e-commerce process from purchase to delivery and customer feedback.
