@@ -28,13 +28,16 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 - Bullet points on what key insights and what actions are best to take for the company
 
 ## 📦 Deliverables
-SOW (Scope of Work):
+
+### SOW (Scope of Work):
 * project_scope_of_work: Used to outline the project main goals and considerations.
-SQL Pipeline (BigQuery Scripts):
+
+### SQL Pipeline (BigQuery Scripts):
 * DML_Schema_Setup: Scripts used to define thable structures and data types.
 * SQL_Cleanning_Setup: Scripts used to clean and transform data.
 * DDL_Automation_Setup: Scripts used to insert, update, delete, and merge data across tables
-Dataset Metadata and Structure:
+
+### Dataset Metadata and Structure:
 * dataset_metadata: Files stored for company and analysts to understand the data.
 
 ### 📊  Dashboard Preview
