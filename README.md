@@ -39,6 +39,36 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 
 ### PERPARE Phase
 
+* **Data Source:**
+* The analysis utilizes the Olist Brazilian E-Commerce Public Dataset. This dataset contains approximately 100,000 orders made between 2016 and 2018.
+
+* **Data Storage & Privacy:**
+* Storage: Raw CSV files were extracted and loaded into Google BigQuery for centralized storage and high-performance SQL processing.
+* Privacy: All customer and seller data has been anonymized by the source to protect PII (Personally Identifiable Information).
+
+* **Checking for Data Bias That May Effect Results:** Before ingestion, I performed initial data profiling on the raw CSV metadata and utilized Excel to audit geographic and temporal distributions. This revealed:
+* Georaphic Bias: 40% of orders are from Sao Paulo. National averages are skewed by this high volume, high-infastrucutre region, masking slower delivery times in the North
+* Temporal Bias: Data cuts off in September 2018.
+* Resonse Bias: Review scores (1-5) tend to represent "extremes". Customers typically only leave reviews for exceptionally good or very poor experiences
+* Retention Bias: 98.8% of customers are one time buyers which make it difficult to calcualte loyalty trends
+
+* **Data Organization:** The dataset consists of 9 relational tables:
+* olist_customers_dataset.csv
+* olist_geolocation_dataset.csv
+* olist_order_items_dataset.csv
+* olist_order_payments_dataset.csv
+* olist_order_reviews_dataset.csv
+* olist_orders_dataset.csv
+* olist_products_dataset.csv
+* olist_sellers_dataset.csv
+* product_category_name_translation.csv
+
+* **Determining What Tools to Use:** Excel, SQL, Power BI, PowerPoint, GitHub/Git, VS_Code
+
+* Year over year growth for 2018 will appear artifically low unless the partial year is noted. Also, the stakeholders wanted data results from 2016 January - 2018 December so i wont be able to do analysis on requested times. 
+
+* **Determining If The Data Can Answer Business Questions:**
+
 
 
 ## 💡 Key Insights & Recommnedataions 
