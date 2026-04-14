@@ -6,7 +6,7 @@ The project analyzes a real-world Brazilian ecommerce public dataset of orders m
 The goal of the project is to simulate a real business scenario by developing an interactive dashboard for stakeholders to visualize business answers along with an executive summary on how to improve the business. To support this, raw CSV data was imported and integrated into SQL using Excel, BigQuery datasets were created and changed within SQL using DML and DDL, then cleaned and transformed using SQL processes, and multiple tables were joined together to create a star schema for analysis. The cleaned datasets were connected to Power BI, where an interactive dashboard was built and used to help develop the perfect executive summary
 
 ## 🎯 Objectives
-The primary goal is to provide a 360-degree view of the Olist Store to measure preformance, increase operational efficiency, improve customer satisfaction, and develop a selling strategy Stakeholders requested to know:
+The primary goal is to provide a 360-degree view of the Olist Store to measure preformance, increase operational efficiency, improve customer satisfaction, and develop a selling strategy. Stakeholders requested to know:
 * Sales Performance: Which product categories drive the most revenue and how is sales volumne trending over time?
 * Logistics & Delivery: What is the average delivery time across different Brazilian states and where are the most significant shipping delays?
 * Customer Experience: How does shipping performance (late vs on-time) directly impact customer review scores?
