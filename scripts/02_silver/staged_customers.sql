@@ -19,7 +19,7 @@ SELECT
   SAFE_CAST(customer_zip_code_prefix AS INT64) AS customer_zip_code_prefix,
 
   -- Customer cities are converted to STRING, stripped of unnecessary spacing, and formatted as title casing (INITCAP)
-  SAFE_CAST(INITCAP(TRIM(customer_city)) AS STRING) AS customer_city,
+  SAFE_CAST(INITCAP(REGEXP_REPLACE(TRIM(customer_city), r'[^\p{L}\s]', '')) AS STRING) AS customer_city,
 
   -- Customer states are converted to STRING, stripped of unnecessary spacing, and formatted as uppercase (e.g. NY)
   SAFE_CAST(UPPER(TRIM(customer_state)) AS STRING) AS customer_state
