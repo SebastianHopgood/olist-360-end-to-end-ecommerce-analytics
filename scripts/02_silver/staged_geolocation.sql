@@ -1,10 +1,10 @@
 /* Logic:
-    - Data Refinement: Standardize raw geolocation data for spatial modeling and analysis.
-    - Precision Mapping: Cast coordinates to FLOAT64 to ensure high precision in Power BI visuals.
-    - String Normalization: Apply consistent casing (UPPER/INITCAP) and use REGEXP_REPLACE 
-      to remove noise symbols while preserving accented Brazilian characters.
-    - Optimization: Use DISTINCT to remove redundant coordinate entries and reduce table size.
-    - Geographic Validation: Filter out "garbage" coordinates outside valid global bounds.
+    - Data Refinement: Standardize raw geolocation data for spatial modeling and analysis
+    - Precision Mapping: Cast coordinates to FLOAT64 to ensure high precision in Power BI visuals
+    - String Normalization: Apply consistent casing (UPPER/INITCAP) and use REGEXP_REPLACE
+      to remove noise symbols while preserving accented Brazilian characters
+    - Optimization: Use DISTINCT to remove redundant coordinate entries and reduce table size
+    - Geographic Validation: Filter out "garbage" coordinates outside valid global bounds
 */
 
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_geolocation` AS
