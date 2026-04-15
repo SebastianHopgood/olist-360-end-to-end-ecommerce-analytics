@@ -1,5 +1,6 @@
 /* 
 Logic Overview:
+  - Data Integrity: Ensures every record has a valid ID and removes records with missing identifiers
   - Time-Series Analysis: Casts 5 lifecycle timestamps to TIMESTAMP format to enable
     shipping performance and lead-time calculations in the Gold layer
   - Join Compatibility: Standardizes Order and Customer IDs (LOWER/TRIM) for schema consistency
