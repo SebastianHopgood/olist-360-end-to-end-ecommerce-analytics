@@ -1,10 +1,10 @@
 /* 
 Logic Overview:
-  - Data Quality: Filters review scores to ensure they fall within the valid 1-5 range.
-  - Time-Series Analysis: Casts creation and answer dates to TIMESTAMPS for response-time tracking.
-  - Join Compatibility: Standardizes Review and Order IDs (LOWER/TRIM) for schema consistency.
-  - Optimization: Removed text-heavy comment columns to improve query performance and reduce storage costs.
-  - Deduplication: Uses DISTINCT to handle potential duplicate review submissions.
+  - Data Quality: Filters review scores to ensure they fall within the valid 1-5 range
+  - Time-Series Analysis: Casts creation and answer dates to TIMESTAMPS for response-time tracking
+  - Join Compatibility: Standardizes Review and Order IDs (LOWER/TRIM) for schema consistency
+  - Optimization: Removed text-heavy comment columns to improve query performance and reduce storage costs
+  - Deduplication: Uses DISTINCT to handle potential duplicate review submissions
 */
 
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_order_reviews` AS
