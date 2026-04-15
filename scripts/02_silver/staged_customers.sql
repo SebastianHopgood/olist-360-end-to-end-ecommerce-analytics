@@ -27,4 +27,3 @@ SELECT
   -- State Formatting: Standardized to uppercase strings (e.g., SP)
   SAFE_CAST(UPPER(TRIM(customer_state)) AS STRING) AS customer_state
 FROM `olist-360-e-commerce.raw_data.raw_olist_customers`
-
