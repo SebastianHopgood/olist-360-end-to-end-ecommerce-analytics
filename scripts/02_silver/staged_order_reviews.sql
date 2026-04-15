@@ -1,6 +1,6 @@
 /* 
 Logic Overview:
-  - Data Quality: Filters review scores to ensure they fall within the valid 1-5 range
+  - Data Quality: Filters review scores to ensure they fall within the valid 1-5 range and removes records with missing IDs
   - Time-Series Analysis: Casts creation and answer dates to TIMESTAMPS for response-time tracking
   - Join Compatibility: Standardizes Review and Order IDs (LOWER/TRIM) for schema consistency
   - Optimization: Removed text-heavy comment columns to improve query performance and reduce storage costs
@@ -24,4 +24,5 @@ FROM `olist-360-e-commerce.raw_data.raw_olist_order_reviews`
 
 WHERE
   -- Ensure only valid business metrics are included
-  review_score BETWEEN 1 AND 5;
+  (review_score BETWEEN 1 AND 5) AND
+  (review_id IS NOT NULL);
