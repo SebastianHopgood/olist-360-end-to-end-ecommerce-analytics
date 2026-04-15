@@ -24,4 +24,6 @@ SELECT DISTINCT
 FROM `olist-360-e-commerce.raw_data.raw_olist_order_items`
 
 -- Ensure data quality by removing impossible prices; allowing 0 freight for free shipping
-WHERE price > 0.00 AND freight_value >= 0.00
+WHERE 
+  price > 0.00 AND 
+  freight_value >= 0.00
