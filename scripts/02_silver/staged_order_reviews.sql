@@ -10,7 +10,7 @@ Logic Overview:
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_order_reviews` AS
 
 SELECT DISTINCT
--- Standardized IDs for internal and cross-table joins
+  -- Standardized IDs for internal and cross-table joins
   SAFE_CAST(LOWER(TRIM(review_id)) AS STRING) AS review_id,
   SAFE_CAST(LOWER(TRIM(order_id)) AS STRING) AS order_id,
 
