@@ -110,6 +110,9 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 *  Optimized model relationships, cardinality, and cross filtering
 *  Configured data model to supprt KPI calculations and time intelligence
 
+*  **Creation of Metadata:**
+*  Explain how i applied data lineage and created data dictionarys to explains what coloumsn mean in a .md file
+
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
