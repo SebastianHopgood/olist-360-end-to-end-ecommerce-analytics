@@ -1,10 +1,11 @@
 /* 
 Logic Overview:
-  - Header Correction: Uses a CTE and WHERE clause to filter out the raw CSV header row 
-    imported as data (string_field_0/1)
+  - Header Correction: Utilizes a CTE and WHERE clause to filter out the raw CSV header row 
+    mistakenly imported as data (string_field_0/1)
   - String Normalization: Standardizes category names by removing underscores and 
-    applying Title Case (INITCAP) for consistency across the schema
+    applying Title Case (INITCAP) for schema-wide consistency
   - Schema Enforcement: Explicitly casts generic string fields into structured STRING columns
+  - Data Integrity: Ensures no null records are included in the translation mapping
 */
 
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_category_name_translation` AS
@@ -22,7 +23,7 @@ SELECT
   product_category_name_english,
   product_category_name_portuguese
 FROM cleanned_data
+
 WHERE
-  
-  -- Filters out the redundant header row imported from the raw CSV file
-  product_category_name_english <> 'Product Category Name English'
+  -- Filters out the redundant header row and any invalid empty records
+  product_category_name_english <> 'Product Category Name English';
