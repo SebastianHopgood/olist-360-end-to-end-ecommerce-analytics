@@ -9,9 +9,9 @@
 
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_geolocation` AS
 
-SELECT
+SELECT DISTINCT
   -- Standardize zip codes as INT64; note that leading zeros will be dropped
-  DISTINCT SAFE_CAST(geolocation_zip_code_prefix AS INT64) AS geolocation_zip_code_prefix,
+  SAFE_CAST(geolocation_zip_code_prefix AS INT64) AS geolocation_zip_code_prefix,
 
   -- Maintain decimal precision for geographic mapping
   SAFE_CAST(geolocation_lat AS FLOAT64) AS geolocation_lat,
