@@ -1,10 +1,10 @@
 /* 
 Logic Overview:
   - Time-Series Analysis: Casts 5 lifecycle timestamps to TIMESTAMP format to enable 
-    shipping performance and lead-time calculations in the Gold layer.
-  - Join Compatibility: Standardizes Order and Customer IDs (LOWER/TRIM) for schema consistency.
-  - Status Normalization: Applies Title Case (INITCAP) to order statuses for clean reporting.
-  - Deduplication: Uses DISTINCT to ensure every order record is unique.
+    shipping performance and lead-time calculations in the Gold layer
+  - Join Compatibility: Standardizes Order and Customer IDs (LOWER/TRIM) for schema consistency
+  - Status Normalization: Applies Title Case (INITCAP) to order statuses for clean reporting
+  - Deduplication: Uses DISTINCT to ensure every order record is unique
 */
 
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_orders` AS
