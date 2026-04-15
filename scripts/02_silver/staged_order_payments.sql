@@ -1,11 +1,11 @@
 /* 
 Logic Overview:
-  - Financial Accuracy: Casts payment values to FLOAT64 and rounds to 2 decimals for precise revenue tracking.
-  - String Normalization: Standardizes payment types by replacing underscores with spaces and applying 
-    Title Case (INITCAP) for professional reporting.
-  - Join Compatibility: Trims and force-lowers Order IDs to ensure a 100% match with the staged_orders table.
-  - Data Validation: Enforces business rules by filtering out negative payments, installments, or sequences.
-  - Deduplication: Uses DISTINCT to remove redundant transaction records and prevent inflated revenue metrics.
+  - Financial Accuracy: Casts payment values to FLOAT64 and rounds to 2 decimals for precise revenue tracking
+  - String Normalization: Standardizes payment types by replacing underscores with spaces and applying
+    Title Case (INITCAP) for professional reporting
+  - Join Compatibility: Trims and force-lowers Order IDs to ensure a 100% match with the staged_orders table
+  - Data Validation: Enforces business rules by filtering out negative payments, installments, or sequences
+  - Deduplication: Uses DISTINCT to remove redundant transaction records and prevent inflated revenue metrics
 */
 
 CREATE OR REPLACE TABLE `olist-360-e-commerce.staged_data.staged_order_payments` AS
