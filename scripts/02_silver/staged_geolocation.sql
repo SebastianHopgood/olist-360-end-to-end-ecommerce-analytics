@@ -1,4 +1,5 @@
-/* Logic Overview:
+/* 
+Logic Overview:
     - Data Refinement: Standardize raw geolocation data for spatial modeling and analysis
     - Precision Mapping: Cast coordinates to FLOAT64 to ensure high precision in Power BI visuals
     - String Normalization: Apply consistent casing (UPPER/INITCAP) and use REGEXP_REPLACE
