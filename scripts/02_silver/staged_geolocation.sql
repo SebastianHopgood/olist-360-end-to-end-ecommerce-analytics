@@ -27,4 +27,4 @@ FROM `olist-360-e-commerce.raw_data.raw_olist_geolocation`
 -- Filter for valid geographic coordinates
 WHERE
   (geolocation_lat BETWEEN -90 AND 90) AND
-  (geolocation_lng BETWEEN -180 AND 180)
+  (geolocation_lng BETWEEN -180 AND 180);
