@@ -84,7 +84,7 @@ Olist CEO and Logistics Department
 * Data Validation: Ensured data is accurate, complete, and consistant across all datasets pre and post data integration
 * View indepth SQL scripts and details via sql script files:
 [View SQL Cleaning Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/02_silver)
-* View clean data previews: [View Cleanned Data Previews](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/cleaned_data_previews)
+* View clean data previews: [View All Cleanned Data Previews](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/cleaned_data_previews)
 * Example of Code: ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/c1b512c2cc032e9508f922e1ff9b18edf6bd15e6/data/SQL_query_staged_orders_picture.png)
 
 **Gold (Curated):**
