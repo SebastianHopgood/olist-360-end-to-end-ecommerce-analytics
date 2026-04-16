@@ -44,7 +44,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 **Data Source:**
 * The analysis utilizes the Olist Brazilian E-Commerce Public Dataset. This dataset contains approximately 100,000 orders made between 2016 and 2018.
 
-* **Data Storage & Privacy:**
+**Data Storage & Privacy:**
 * Storage: Raw CSV files were extracted and loaded into Google BigQuery for centralized storage and high-performance SQL processing
 * Privacy: All customer and seller data has been anonymized by the source to protect PII (Personally Identifiable Information)
 
