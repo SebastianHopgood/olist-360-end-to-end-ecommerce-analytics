@@ -73,7 +73,7 @@ Olist CEO and Logistics Department
 ---
 
 **Bronze (Raw):**
-* Basic cleanning in excel files to remove unecessary columns, fix headers with proper names and using snake casing, and removing broken fromatting to ensure a sucessful data load. Columns that were removed were: review_comment_title and review comment message
+* Initial data profiling and quality audit using Microsoft Excel to remove unecessary columns, fix headers with proper names and snake casing, and removing broken fromatting to ensure a sucessful data load. Columns that were removed were: review_comment_title and review comment message
 * Ingested 9 raw Olist datasets from CSVs into BigQuery without modifications to preserve data lineage
 * Validated data post data integration to confirm proper data load, correct column names, and correct data types
 
