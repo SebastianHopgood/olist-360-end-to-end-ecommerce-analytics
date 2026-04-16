@@ -48,7 +48,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 * Storage: Raw CSV files were extracted and loaded into Google BigQuery for centralized storage and high-performance SQL processing
 * Privacy: All customer and seller data has been anonymized by the source to protect PII (Personally Identifiable Information)
 
-* **Checking for Data Bias That May Effect Results:** Before ingestion, I performed initial data profiling on the raw CSV metadata and utilized Excel to audit geographic and temporal distributions. This revealed:
+  Checking for Data Bias That May Effect Results:** Before ingestion, I performed initial data profiling on the raw CSV metadata and utilized Excel to audit geographic and temporal distributions. This revealed:
 * Georaphic Bias: 40% of orders are from Sao Paulo. National averages are skewed by this high volume, high-infastrucutre region, masking slower delivery times in the North
 * Temporal Bias: Data cuts off in September 2018
 * Resonse Bias: Review scores (1-5) tend to represent "extremes". Customers typically only leave reviews for exceptionally good or very poor experiences
