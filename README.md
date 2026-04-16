@@ -81,7 +81,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 
 * **Silver (Staging/Cleaned):**
 * Schema Enforcement: Defined DDL schemas to ensure data types (Dates, Floats, Strings, etc.)
-* Cleaning & Standardization: Used SQL to handle nulls, remove duplicates, and standardize formats across the 9 datasets
+* Cleaning & Standardization: Used SQL to handle nulls, remove duplicates, and standardize formats across the 9 datasets to prep data for readability for Power BI visualizations
 * Domain Integration: Instead of a single "flat" table, datasets were joined into unified tables based on business logic (e.g., merging Order, Item, and Payment data)
 
 * **Gold (Curated):**
@@ -96,7 +96,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 * Data Cleaning: (List all the things i did to clean data when i actually compelte it)
 * Data Validation: Happens after cleaning data and intergration (list all things that i did to validate data when i actually compete it)
 
-** **Data Transformation:**
+* **Data Transformation:**
 * (list all the things i did to transform data when i actually complete it)
 
 * **Data Intergration:**  (remove this and add it into the silver area)
