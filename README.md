@@ -22,6 +22,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 ## 🔄 Project Workflow
 
 ### ASK Phase
+---
 
 * **Define the Project Goal:** The primary goal is to provide a 360-degree view of the Olist Store to measure performance, increase operational efficiency, improve customer satisfaction, and develop a selling strategy
 
@@ -38,7 +39,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 * SOW is created in order to give stakeholders a clear outline of the project which includes: project overview, scope, out-of-scope, project deliverables and files, key project milestones, and an estimated timeline for each milestone and project completion. Link to SOW PDF: "add link"
 
 ### PERPARE Phase
---
+---
 
 * **Data Source:**
 * The analysis utilizes the Olist Brazilian E-Commerce Public Dataset. This dataset contains approximately 100,000 orders made between 2016 and 2018.
@@ -74,6 +75,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 * Cited: High - Fully documented and hosted on Kaggle with clear ownership
 
 ### PROCESS Phase (Medallion Architecture)
+---
 
 * **Bronze (Raw):**
 * Basic cleanning in excel files to remove unecessary columns, fix headers with proper names and using snake casing, and removing broken fromatting to ensure a sucessful data load. Columns that were removed were: review_comment_title and review comment message
