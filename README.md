@@ -91,7 +91,14 @@ Example of Code: ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-
 
 **Gold (Curated):**
 * Dimensional Modeling: Developed a Star Schema optimized for Power BI performance
-* Business Logic: Applied advanced transformations, feature engineering (e.g., delivery lead times), and created SQL views for reporting
+* (SHOW A DRAWING OF THE TABLE STRUCTURE WHEN ITS DONE)
+* -> EXPLAIN: why i choose to do this schema for this project, how it relates to answering buiness questions, and why i choose to leave out speciic things.
+* Calculated columns & Groups:
+* -> EXPLAIN: what columns and grouping i made to help stakeholders busienss questions
+* KPIS:
+* -> explain what i calculated to help show key preformance indicators
+* SQL SCRIPTS:
+* SHOW: the proof of what i did and write comments to explain what i did, give a preview in readme file
 
 **Creation of Metadata:**
 *  Explain how i applied data lineage and created data dictionarys to explains what coloumsn mean in a .md file
