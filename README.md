@@ -84,7 +84,7 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 * Cleaning & Standardization: Used SQL to handle nulls, filtered out misisng primary keys, perpared data for proper joins, implemented headder correction, remove duplicates, string normalization, and standardize formats across the 9 datasets to prep data for readability and data digestion for Power BI visualizations
 * Data Validation: Ensured data is accurate, complete, and consistant across all datasets pre and post data integration
 * View indepth SQL scripts and details via sql script files:
-[View SQL Cleaning Scripts](./02_silver/)
+[View SQL Cleaning Scripts](02_silver)
 
 * **Gold (Curated):**
 * Dimensional Modeling: Developed a Star Schema optimized for Power BI performance
