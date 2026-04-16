@@ -81,8 +81,9 @@ The primary goal is to provide a 360-degree view of the Olist Store to measure p
 
 * **Silver (Staging/Cleaned):**
 * Schema Enforcement: Defined DDL schemas to ensure data types (Dates, Floats, Strings, etc.)
-* Cleaning & Standardization: Used SQL to handle nulls, remove duplicates, and standardize formats across the 9 datasets to prep data for readability for Power BI visualizations
-* Domain Integration: Instead of a single "flat" table, datasets were joined into unified tables based on business logic (e.g., merging Order, Item, and Payment data)
+* Cleaning & Standardization: Used SQL to handle nulls, filtered out misisng primary keys, perpared data for proper joins, implemented headder correction, remove duplicates, string normalization, and standardize formats across the 9 datasets to prep data for readability and data digestion for Power BI visualizations
+* Data Validation: Ensured data is accurate, complete, and consistant across all datasets pre and post data integration
+* View indepth SQL scripts and details via sql script files: 
 
 * **Gold (Curated):**
 * Dimensional Modeling: Developed a Star Schema optimized for Power BI performance
