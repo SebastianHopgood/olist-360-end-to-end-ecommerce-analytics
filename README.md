@@ -154,11 +154,21 @@ Insights: Top 5 Categories
 * **Business Impact:** This high concentration means any supply chain disruption in these core categories (like Health/Beauty or Watches/Gifts) would significantly impact the store's total bottom line.
 * **Strategy:** I focused the MoM growth analysis on these specific categories to ensure the business's primary revenue engines are performing consistently month-over-month
 
-* Top 10% Sellers by Order Amount:
+Top 10% Sellers by Order Amount:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
-* Insights:
+
+Insights: Top 10% Sellers
+* **Operational Backbone:** A tiny fraction of the seller base (10%) manages the vast majority of order volume, representing the store's primary engine for fulfillment.
+* **Performance Benchmarking:** By isolating these elite sellers, we can establish gold-standard KPIs for delivery speed and reliability to compare against lower-tier sellers.
+* **Strategic Mapping:** This list allows us to plot our "Elite Supply" on a map to see if they are actually located near our "High-Demand" customer clusters.
+
 * Market Density:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/b161567bb9ab160c59be7e52d58e27813f53aa74/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/market_density_picture.png)
+
+Insights: Market Density
+* **Supply-Demand Mismatch:** Pinpoints regions where the number of customers far outweighs the local seller presence, creating "Supply Deserts."
+* **Logistics Friction:** States with high customer counts but low seller counts represent areas where shipping is likely slower and more expensive due to cross-state transit.
+* **Growth Opportunity:** Provides a roadmap for seller recruitment; by targeting new sellers in these high-demand "Hot Spots," the business can decentralize its supply chain and improve delivery speeds.
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
