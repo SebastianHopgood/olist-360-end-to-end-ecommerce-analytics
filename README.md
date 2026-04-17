@@ -144,10 +144,16 @@ The Approach:
 * **Top 5 Category Identification:** I wrote an analysis query to identify the top 5 product categories by total revenue. Therefore, i wil be aware on what product categories to display in the Power BI dashboard for calculating Month-over-Month (MoM) growth
 * **Seller Tiering & Density:** I created dedicated BigQuery views to isolate the top 10% of sellers by volume and cross-reference their locations with customer density. This structured approach ensured data consistency and optimized the map performance in Power BI
 * **Visual Strategy:** I plan to layer both queries into a single map in Power BI by using customer density to show "hot spots" (demand) and markers for elite sellers (supply), I was able to visually pinpoint unserved high-demand regions
-* Top 5 Product Categories:
+
+Top 5 Product Categories:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
 * Extra Insights/Context: [Shows Percentage of Product Category Revenue Share](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/main/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_product_categories_percentage_for_context.sql)
-* Insights:
+
+Insights: Top 5 Categories
+* **Revenue Concentration:** While there are 74 total categories, the Top 5 drive 39.8% of total revenue, and the Top 10 drive 62.4%.
+* **Business Impact:** This high concentration means any supply chain disruption in these core categories (like Health/Beauty or Watches/Gifts) would significantly impact the store's total bottom line.
+* **Strategy:** I focused the MoM growth analysis on these specific categories to ensure the business's primary revenue engines are performing consistently month-over-month
+
 * Top 10% Sellers by Order Amount:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
 * Insights:
