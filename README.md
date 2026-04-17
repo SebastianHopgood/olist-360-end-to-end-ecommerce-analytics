@@ -131,7 +131,7 @@ The Analyze phase focuses on querying the curated gold-layer data to uncover tre
 
 Question 1:
 * Identify the top 5 product categories by total revenue
-* [image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/50af8e88ea4aa13ae4ac2227003159ae66289838/sql%20scripts/anlaysis_scripts/sales_performance_analysis/top_5_product_categories_picture.png)
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/50af8e88ea4aa13ae4ac2227003159ae66289838/sql%20scripts/anlaysis_scripts/sales_performance_analysis/top_5_product_categories_picture.png)
 
 Findings:
 * The top 5 product categories by total revenue are: Healthy Beauty, Watches Gifts, Bed Bath Table, Sports Leisure, and Computers Accessories
