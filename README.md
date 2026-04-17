@@ -127,8 +127,9 @@ Click to view Gold Layer SQL Scripts: [All Table SQL Scripts](https://github.com
 ### Analyze Phase
 ---
 The Analyze phase focuses on querying the curated gold-layer data to uncover trends, patterns, and relationships that address key stakeholder questions. These insights are used to define relevant KPIs and guide the design of effective data visualizations
-**Sales Performance**:
 
+**Sales Performance**:
+---
 Question 1:
 * Identify the top 5 product categories by total revenue
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/50af8e88ea4aa13ae4ac2227003159ae66289838/sql%20scripts/anlaysis_scripts/sales_performance_analysis/top_5_product_categories_picture.png)
