@@ -111,22 +111,6 @@ Click to view Gold Layer SQL Scripts: [All Table SQL Scripts](https://github.com
 * Gold/Analytical Layer Layout:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/95460da69e90f424b67ac96f1375d50083036543/data/gold_layer_layout.png)
 
-* Dimensional Modeling: Developed a Star Schema optimized for Power BI performance
-* (SHOW A DRAWING OF THE TABLE STRUCTURE WHEN ITS DONE)
-* -> EXPLAIN: why i choose to do this schema for this project, how it relates to answering buiness questions, and why i choose to leave out speciic things.
-* Calculated columns & Groups:
-* -> EXPLAIN: what columns and grouping i made to help stakeholders busienss questions
-* KPIS:
-* -> explain what i calculated to help show key preformance indicators
-* SQL SCRIPTS:
-* SHOW: the proof of what i did and write comments to explain what i did, give a preview in readme file
-
-
-**NOTETTETETETTE**: THE STAKEHOLDERS QUESTIONS ALL REVOLVE AROUND ORDERS, JOIN DATA FROM ALL 4 ORDERS TABLES INTO A FACT TABLE, THEN CREATE IDS TO MAKE DIM AND DATE TABLES
-
-**Creation of Metadata:**
-*  Explain how i applied data lineage and created data dictionarys to explains what coloumsn mean in a .md file
-
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
 
