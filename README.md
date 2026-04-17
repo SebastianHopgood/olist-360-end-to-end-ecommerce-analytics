@@ -148,8 +148,29 @@ Findings:
 Insights:
 * With the top 10 categories generating over 72% of revenue, the business has a "long tail" of 64 other categories that contribute very little. Stakeholders can use this data to decide whether to cut underperforming lines to save on storage and operational costs
 
+Question 2:
+* Calculate product categories Month-over-Month (MoM) growth between 2016 and 2018
+* ![image alt) PUT A DAX PHOTO HERE
 
+Findings:
+* put findings here
 
+Insights:
+* put insights here
+
+**Logistics:**
+
+Question 1:
+* Determine the average lead time in days for each Brazilian state
+* put image here
+
+Findings:
+* put findings here
+
+Insights:
+* put insights here
+
+Question 2:
 
 
 ## 💡 Key Insights & Recommnedataions 
