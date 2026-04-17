@@ -141,66 +141,17 @@ To ensure a high-performance and insightful dashboard, I focused on three techni
 2. Sales & Seller Strategy
 ---
 The Approach:
-* **Top 5 Category Identification:** I wrote an analysis query to identify the top 5 product categories by total revenue. Therefore, i wil be aware on what product categories to display in the Power BI dashboard for calculating Month-over-Month (MoM) growth.
-* **Seller Tiering & Density:** I isolated the top 10% of sellers by volume and cross-referenced them with customer density data
+* **Top 5 Category Identification:** I wrote an analysis query to identify the top 5 product categories by total revenue. Therefore, i wil be aware on what product categories to display in the Power BI dashboard for calculating Month-over-Month (MoM) growth
+* **Seller Tiering & Density:** I created dedicated BigQuery views to isolate the top 10% of sellers by volume and cross-reference their locations with customer density. This structured approach ensured data consistency and optimized the map performance in Power BI
 * **Visual Strategy:** I plan to layer both queries into a single map in Power BI by using customer density to show "hot spots" (demand) and markers for elite sellers (supply), I was able to visually pinpoint unserved high-demand regions
-* Top 5 Product Categories by Total Revenue Query:
+* Top 5 Product Categories:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
 * Insights:
-* Top 10% Sellers by Revenue Contribution Query:
-* ![image alt]()
+* Top 10% Sellers by Order Amount:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
 * Insights:
-
-
-
-
-**Sales Performance**:
----
-Question 1:
-* Identify the top 5 product categories by total revenue
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/50af8e88ea4aa13ae4ac2227003159ae66289838/sql%20scripts/anlaysis_scripts/sales_performance_analysis/top_5_product_categories_picture.png)
-
-Findings:
-* The top 5 product categories by total revenue are: Healthy Beauty, Watches Gifts, Bed Bath Table, Sports Leisure, and Computers Accessories
-
-Recommendation:
-* The Top 5 categories (Health & Beauty, Watches & Gifts, Bed Bath & Table, Sports & Leisure, and Computers & Accessories) are the primary engines of the business. Stakeholders should prioritize these areas for inventory stability, increase ad-spend for products within these categories, and potentially implement cross-selling bundles for prodcuts accross these categories
-
-In-depth Query Analysis/Context:
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/dacf4b096343878bc7dc9b2f8cc7b535ca31364e/sql%20scripts/anlaysis_scripts/sales_performance_analysis/top_5_product_categories_context_picture.png)
-
-Findings:
-* There are a total of 74 product categories. The top 5 product categories total revenue percentage share combined is equal to 38.9%, top 10 is equal to 72.5% of total revenue
-
-Recommendation:
-* With the top 10 categories generating over 72% of revenue, the business has a "long tail" of 64 other categories that contribute very little. Stakeholders can use this data to decide whether to cut underperforming lines to save on storage and operational costs
-
-Question 2:
-* Calculate product categories Month-over-Month (MoM) growth between 2016 and 2018
-* Each product will be monitored using a line graph in Power Bi to display product category MoM growth using DAX
-
-**Seller Strategy:**
----
-Question 1:*
-* Identify sellers in the top 10% by sales volume
-
-**Logistics & Delivery:**
----
-Question 1:
-* Determine the average lead time in days for each Brazilian state
-* Created new columns for analyssis:
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/8427cbb2d303b867311fa00d1fdeb53966c3922c/sql%20scripts/anlaysis_scripts/logistics_analysis/new_logistics_columns_picture.png)
-* Analysis Query:
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f4cc896a8f9ef48dc10dbd2b7591d5a2aa56d3e3/sql%20scripts/anlaysis_scripts/logistics_and_delivery_analysis/average_customer_lead_time_picture.png)
-
-Findings:
-* 27 brazilian states were analyzed, the max average lead time is 28.2 days, minimun is 8.7 days, the top 5 states with longest wait time (in order) are: RR, AP, AM, AL, PA
-
-In-depth Query Analysis:
-* ![image alt](
-
-Question 2:
-
+* Market Density:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/c36955022def744561a89dfe8a32695b117f531a/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/market_density_pic.png)
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
