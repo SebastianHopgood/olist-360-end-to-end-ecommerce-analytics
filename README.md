@@ -76,6 +76,7 @@ Olist CEO and Logistics Department
 * Initial data profiling and quality audit using Microsoft Excel to remove unecessary columns, fix headers with proper names and snake casing, and removing broken fromatting to ensure a sucessful data load. Columns that were removed were: review_comment_title and review comment message
 * Ingested 9 raw Olist datasets from CSVs into BigQuery without modifications to preserve data lineage
 * Validated data post data integration to confirm proper data load, correct column names, and correct data types
+* Bronze Data Layout:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/7202dc2ddd170f9ed65a5f78989c84466ffaacd2/data/raw_data_intergration_preview.png)
 
 **Silver (Staging/Cleaned):**
