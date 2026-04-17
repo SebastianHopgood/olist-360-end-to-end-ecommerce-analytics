@@ -139,9 +139,12 @@ To ensure a high-performance and insightful dashboard, I focused on three techni
 * The Insight:
 
 2. Sales & Seller Strategy
-* The Approach: First, I wrote an analysis query to identify the top 5 product categories by total revenue. Therefore, i wil be aware on what product categories to display in the Power BI dashboard for calculating Month-over-Month (MoM) growth. Next, I identified the sellers in the top 10% of sales volume. So, when i create a map visualization in Power BI I can use conditional formatting to highlight the top 10% sellers by revenue contribution
+The Approach:
+* Top 5 Category Identification: I wrote an analysis query to identify the top 5 product categories by total revenue. Therefore, i wil be aware on what product categories to display in the Power BI dashboard for calculating Month-over-Month (MoM) growth.
+* Seller Tiering & Density: I isolated the top 10% of sellers by volume and cross-referenced them with customer density data
+* Visual Strategy: I plan to layer both queries into a single map in Power BI by using customer density to show "hot spots" (demand) and markers for elite sellers (supply), I was able to visually pinpoint unserved high-demand regions
 * Top 5 Product Categories by Total Revenue Query:
-* ![image alt]()
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
 * Insights:
 * Top 10% Sellers by Revenue Contribution Query:
 * ![image alt]()
