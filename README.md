@@ -42,7 +42,8 @@ Olist CEO and Logistics Department
 ### PERPARE Phase
 ---
 The Prepare Phase focuses on data discovery, source validation, and bias assessment to ensure the dataset is fit-for-purpose and technically sound for high-level business analysis
-* **Data Source:**
+
+**Data Source:**
 * The analysis utilizes the Olist Brazilian E-Commerce Public Dataset. This dataset contains approximately 100,000 orders made between 2016 and 2018.
 
 **Data Storage & Privacy:**
