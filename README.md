@@ -131,15 +131,7 @@ The Analyze phase focuses on querying the curated gold-layer data to uncover tre
 Question 1:
 * Identify the top 5 product categories by total revenue
 * Query:  
-SELECT
-dp.product_category_name,
-ROUND(SUM(ofact.price),2) AS total_category_revenue
-FROM `olist-360-e-commerce.analytical_data.orders_fact` AS ofact
-INNER JOIN `olist-360-e-commerce.analytical_data.dim_products` AS dp
-ON ofact.product_id = dp.product_id
-GROUP BY dp.product_category_name
-ORDER BY total_category_revenue DESC
-LIMIT 5;
+
 
 Findings:
 * explain what happend
