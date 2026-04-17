@@ -74,7 +74,8 @@ Olist CEO and Logistics Department
 
 **Bronze (Raw):**
 ---
-* Initial data profiling and quality audit using Microsoft Excel to remove unecessary columns, fix headers with proper names and snake casing, and removing broken fromatting to ensure a sucessful data load. Columns that were removed were: review_comment_title and review comment message
+The Bronze Layer serves as the landing zone for raw data, ensuring a permanent record of the original source files and preserving data lineage for auditing
+* Initial data profiling and quality audit using Microsoft Excel to remove unnecessary columns, fix headers with proper names and snake casing, and removing broken fromatting to ensure a successful data load. Columns that were removed were: review_comment_title and review comment message
 * Ingested 9 raw Olist datasets from CSVs into BigQuery without modifications to preserve data lineage
 * Validated data post data integration to confirm proper data load, correct column names, and correct data types
 * Bronze Data Layout:
@@ -82,9 +83,10 @@ Olist CEO and Logistics Department
 
 **Silver (Staging/Cleaned):**
 ---
+The Silver Layer focus is on data quality and standardization, transforming raw files into clean, validated, and joined staging tables ready for modeling
 * Schema Enforcement: Defined DDL schemas to ensure data types (Dates, Floats, Strings, etc.)
-* Cleaning & Standardization: Used SQL to handle nulls, filtered out misisng primary keys, perpared data for proper joins, implemented headder correction, remove duplicates, string normalization, and standardize formats across the 9 datasets to prep data for readability and data digestion for Power BI visualizations
-* Data Validation: Ensured data is accurate, complete, and consistant across all datasets pre and post data integration
+* Cleaning & Standardization: Used SQL to handle nulls, filtered out missing primary keys, prepared data for proper joins, implemented headder correction, remove duplicates, string normalization, and standardize formats across the 9 datasets to prep data for readability and data digestion for Power BI visualizations
+* Data Validation: Ensured data is accurate, complete, and consistent across all datasets pre and post data integration
 * View clean data previews: [View All Cleanned Data Previews](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/cleaned_data_previews)
 * View indepth SQL scripts and details via sql script files:
 [View All SQL Cleaning Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/02_silver)
@@ -115,7 +117,7 @@ I implemented the following engineering best practices in this layer:
 
 **SQL Documentation:**
 Click to view Gold Layer SQL Scripts: [All Table SQL Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/03_gold)
-* Exmple of Code:
+* Example of Code:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/b7f97f79a975b9fc0cc67228064e96175f8691ec/data/order_fact_query_preview.png)
 * Gold/Analytical Layer Layout:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/95460da69e90f424b67ac96f1375d50083036543/data/gold_layer_layout.png)
