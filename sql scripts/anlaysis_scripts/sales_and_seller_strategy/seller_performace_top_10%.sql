@@ -1,3 +1,5 @@
+CREATE OR REPLACE VIEW `olist-360-e-commerce.data_views.high_capacity_sellers` AS 
+
 -- Identify the high-capacity sellers driving the top 10% of order volume
 WITH sellervolume AS (
   SELECT
