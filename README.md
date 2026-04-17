@@ -133,8 +133,9 @@ To ensure a high-performance and insightful dashboard, I focused on three techni
 * Feature Engineering (Calculated Columns): I created custom logic to calculate critical business KPIs, such as Lead Time Days (the delta between purchase and delivery) and On-Time Delivery Status (comparing actual delivery vs. estimated dates)
 * Intertwined Insights: I performed multi-table joins to correlate disparate data points—specifically linking Logistics Performance directly to Customer Review Scores—to prove the business impact of shipping delays
 
-1. Logistics & Customer Experience
-* The Approach:
+Logistics & Customer Experience
+---
+The Approach:
 * The Code: (1-2 code queries max)
 * The Insight:
 
