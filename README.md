@@ -104,7 +104,7 @@ I implemented the following engineering best practices in this layer:
 * Spatial Optimization: Aggregated geolocation coordinates to the Zip Prefix level to protect PII and improve map rendering speeds
 
 * **SQL Documentation:**
-Click to view Gold Layer SQL Scripts: [All Table SQL Scripts]( 
+Click to view Gold Layer SQL Scripts: [All Table SQL Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/03_gold)
 
 * Dimensional Modeling: Developed a Star Schema optimized for Power BI performance
 * (SHOW A DRAWING OF THE TABLE STRUCTURE WHEN ITS DONE)
