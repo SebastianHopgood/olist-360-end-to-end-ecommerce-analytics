@@ -136,8 +136,30 @@ To ensure a high-performance and insightful dashboard, I focused on three techni
 Logistics & Customer Experience
 ---
 The Approach:
-* The Code: (1-2 code queries max)
-* The Insight:
+* **Lead Time Benchmarking:** Used custom-engineered lead_time_days to aggregate delivery data by Brazilian State and normalize performance across corridors
+* **Failure Rate KPI:** Leveraged the shipping_delays classification (Delayed vs. On-Time) to identify "high-pain" regions where deliveries exceed estimated dates
+* **Satisfaction Gap Analysis:** Compared average review scores across the shipping_delays categories to quantify the "Satisfaction Penalty"
+
+Adding Calculated and Grouping Columns:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/db8ff1754a4beac412fe53424a691d0259e167e0/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/new_logistics_columns_picture.png)
+
+Logistics Performance:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/77f175fd5b94e5d920cb37b8570ebe94cf407d9d/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/logistics_performance_picture.png)
+
+Insights: Logistics Performace
+* **Regional Performance Gap:** The South and Southeast regions (e.g., São Paulo and Minas Gerais) show the highest efficiency, with average lead times under 8–10 days, while the North/Northeast regions (e.g., Acre and Alagoas) often exceed 20+ days
+* **Delivery Promise Accuracy:** High-delay states show a significant disconnect between "Estimated" and "Actual" delivery dates. This suggests that the platform’s current estimation algorithm is underestimating the logistical challenges of the North, leading to lower customer trust
+* **Infrastructure Impact:** Regions with the highest pct_late_orders directly correlate with areas of lower infrastructure density, indicating that logistics bottlenecks are geographic rather than seller-dependent
+* **The "Satisfaction Penalty":** Logistics is the #1 driver of negative sentiment; states with a higher percentage of Delayed statuses show a direct, measurable drop in average regional review scores compared to the national average
+
+Shipping Customer Statisfaction:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/77f175fd5b94e5d920cb37b8570ebe94cf407d9d/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/shipping_satisfaction_impact_picture.png)
+
+Insights: Shipping Customer Statisfaction
+*⭐ **The Satisfaction Penalty:** Orders delivered late have a massive impact on sentiment, typically causing a ~2.1 to 2.4-star drop in average ratings compared to on-time deliveries
+* 📉 **The 1-Star Threshold:** While overall Olist ratings are high (mostly 4-5 stars), delayed orders are heavily skewed toward 1-star reviews, proving that delivery failure is the single largest driver of negative feedback
+* 🛑 **Retention Risk:** Customers who experience shipping delays are significantly less likely to become repeat buyers, contributing to the platform's high one-time purchaser rate of ~98.8%
+* 📦 **Quality vs. Speed:** Analysis reveals that customers are often willing to wait for products, but missing the "Estimated Delivery Date" is what triggers the bad review, regardless of how fast the shipping was
 
 Sales & Seller Strategy
 ---
