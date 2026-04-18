@@ -193,6 +193,11 @@ Insights: Market Density
 * **Logistics Friction:** States with high customer counts but low seller counts represent areas where shipping is likely slower and more expensive due to cross-state transit
 * **Growth Opportunity:** Provides a roadmap for seller recruitment; by targeting new sellers in these high-demand "Hot Spots," the business can decentralize its supply chain and improve delivery speeds
 
+### Share Phase
+---
+
+* test
+
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
 
