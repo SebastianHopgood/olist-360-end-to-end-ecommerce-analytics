@@ -134,11 +134,12 @@ The Approach:
 * **Identified High-Performing Sellers:**
 * A SQL query using window functions was used to classify sellers into the top 10% by sales volume. This segment highlights high-capacity sellers that could be prioritized for promotional opportunities to increase platform sales
 * **Top Product Revenue Contribution Analysis:**
-* SQL and DAX were used to identify the top 5 product categories by revenue, along with a Top 10 breakdown for comparison. This helped quantify revenue concentration and communicate how a small number of categories contribute significantly to total revenue
+* SQL was used to identify the top 5 product categories by revenue, along with a Top 10 breakdown for comparison. This helped quantify revenue concentration and communicate how a small number of categories contribute significantly to total revenue
 * **Time Intelligence Implementation:**
 * A dedicated date table was created in Power BI and connected to transactional data to enable time-based analysis. This allowed monthly revenue trends (2016–2018) to be tracked and product category performance to be evaluated over time
 * **Seller vs Customer Distribution Analysis:**
 * A geographic comparison was conducted in Power BI to evaluate seller concentration against customer distribution by state. This highlighted regions with high demand but relatively low seller presence, indicating potential market expansion opportunities
+* **KPI and Measure Development (Power BI / DAX):** Created calculated measures to support key metrics such as total revenue, average order value (AOV), order count, and top 5% produt categories revenue share
 
 Evidence:
 * High-Performing Sellers (Top 10%):
@@ -162,6 +163,8 @@ The Approach:
 * Shipping delays were analyzed against customer review scores (1–5) to evaluate the impact of logistics performance on satisfaction. This helped assess whether delays correlate with reduced customer sentiment and identify thresholds where satisfaction begins to decline
 * **Root Cause Exploration of Customer Dissatisfaction:**
 * Review scores were segmented against delivery performance metrics to explore potential drivers of dissatisfaction. This analysis focused on identifying whether shipping delays were a primary factor affecting customer sentiment or if other variables contributed
+* **KPI and Measure Development (Power BI / DAX):**
+* Developed calculated measures for average customer rating, delivery promise accuracy, average lead days, average seller processing days, and delayed shipping penalty (rating impact)
 
 * Data Preperation (CASE Statements & Calculated Columns):
 * ![image alt]()
@@ -178,65 +181,36 @@ Evidence:
 
 
 
-Logistics & Customer Experience
---- 
+
 Adding Calculated and Grouping Columns:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/db8ff1754a4beac412fe53424a691d0259e167e0/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/new_logistics_columns_picture.png)
 
 Logistics Performance:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/77f175fd5b94e5d920cb37b8570ebe94cf407d9d/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/logistics_performance_picture.png)
 
-Insights: Logistics Performace
-* **Regional Performance Gap:** The South and Southeast regions (e.g., São Paulo and Minas Gerais) show the highest efficiency, with average lead times under 8–10 days, while the North/Northeast regions (e.g., Acre and Alagoas) often exceed 20+ days
-* **Delivery Promise Accuracy:** High-delay states show a significant disconnect between "Estimated" and "Actual" delivery dates. This suggests that the platform’s current estimation algorithm is underestimating the logistical challenges of the North, leading to lower customer trust
-* **Infrastructure Impact:** Regions with the highest pct_late_orders directly correlate with areas of lower infrastructure density, indicating that logistics bottlenecks are geographic rather than seller-dependent
-* **The "Satisfaction Penalty":** Logistics is the #1 driver of negative sentiment; states with a higher percentage of Delayed statuses show a direct, measurable drop in average regional review scores compared to the national average
-
 Shipping Customer Statisfaction:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/77f175fd5b94e5d920cb37b8570ebe94cf407d9d/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/shipping_satisfaction_impact_picture.png)
-
-Insights: Shipping Customer Statisfaction
-*⭐ **The Satisfaction Penalty:** Orders delivered late have a massive impact on sentiment, typically causing a ~2.1 to 2.4-star drop in average ratings compared to on-time deliveries
-* 📉 **The 1-Star Threshold:** While overall Olist ratings are high (mostly 4-5 stars), delayed orders are heavily skewed toward 1-star reviews, proving that delivery failure is the single largest driver of negative feedback
-* 🛑 **Retention Risk:** Customers who experience shipping delays are significantly less likely to become repeat buyers, contributing to the platform's high one-time purchaser rate of ~98.8%
-* 📦 **Quality vs. Speed:** Analysis reveals that customers are often willing to wait for products, but missing the "Estimated Delivery Date" is what triggers the bad review, regardless of how fast the shipping was
-
-Sales & Seller Strategy
----
-The Approach:
-* **Top 5 Category Identification:** I wrote an analysis query to identify the top 5 product categories by total revenue. Therefore, i wil be aware on what product categories to display in the Power BI dashboard for calculating Month-over-Month (MoM) growth
-* **Seller Tiering & Density:** I created dedicated BigQuery views to isolate the top 10% of sellers by volume and cross-reference their locations with customer density. This structured approach ensured data consistency and optimized the map performance in Power BI
-* **Visual Strategy:** I plan to layer both queries into a single map in Power BI by using customer density to show "hot spots" (demand) and markers for elite sellers (supply), I was able to visually pinpoint unserved high-demand regions
 
 Top 5 Product Categories:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
 * Extra Insights/Context: [Shows Percentage of Product Category Revenue Share](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/main/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_product_categories_percentage_for_context.sql)
 
-Insights: Top 5 Categories
-* **Revenue Concentration:** While there are 74 total categories, the Top 5 drive 39.8% of total revenue, and the Top 10 drive 62.4%
-* **Business Impact:** This high concentration means any supply chain disruption in these core categories (like Health/Beauty or Watches/Gifts) would significantly impact the store's total bottom line
-* **Strategy:** I focused the MoM growth analysis on these specific categories to ensure the business's primary revenue engines are performing consistently month-over-month
-
 Top 10% Sellers by Order Amount:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
-
-Insights: Top 10% Sellers
-* **Operational Backbone:** A tiny fraction of the seller base (10%) manages the vast majority of order volume, representing the store's primary engine for fulfillment
-* **Performance Benchmarking:** By isolating these elite sellers, we can establish gold-standard KPIs for delivery speed and reliability to compare against lower-tier sellers
-* **Strategic Mapping:** This list allows us to plot our "Elite Supply" on a map to see if they are actually located near our "High-Demand" customer clusters
 
 * Market Density:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/b161567bb9ab160c59be7e52d58e27813f53aa74/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/market_density_picture.png)
 
-Insights: Market Density
-* **Supply-Demand Mismatch:** Pinpoints regions where the number of customers far outweighs the local seller presence, creating "Supply Deserts"
-* **Logistics Friction:** States with high customer counts but low seller counts represent areas where shipping is likely slower and more expensive due to cross-state transit
-* **Growth Opportunity:** Provides a roadmap for seller recruitment; by targeting new sellers in these high-demand "Hot Spots," the business can decentralize its supply chain and improve delivery speeds
-
 ### Share Phase
 ---
 
-* test
+🛒 Sales & Seller Strategy Insights:
+--- 
+*
+
+🚚 Logistics & Customer Experience
+---
+*
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
