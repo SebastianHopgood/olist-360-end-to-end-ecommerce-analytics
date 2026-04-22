@@ -203,14 +203,39 @@ Top 10% Sellers by Order Amount:
 
 ### Share Phase
 ---
+This phase summarizes key findings from the analysis to highlight business performance across sales, logistics, and customer experience, focusing on key patterns and relationships in the data
 
-🛒 Sales & Seller Strategy Insights:
+🛒 Sales & Seller Strategy:
 --- 
-*
+Key Findings:
+* d
 
-🚚 Logistics & Customer Experience
+Sales & Seller Strategy Dashboard:
+* [image alt]()
+
+🚚 Logistics & Customer Experience:
 ---
-*
+Key Findings:
+* d
+
+Logistics & Customer Experince Dashbaord:
+* [image alt]()
+
+### ACT Phase
+---
+This phase translates insights from the analysis into actionable business recommendations. It outlines what the business should do next to improve performance in areas such as sales, logistics, and customer experience, based on the patterns and issues identified in the data.
+
+🛒 Sales & Seller Strategy — Actions
+* Action 1: 
+* Action 2:
+
+🚚 Logistics & Customer Experience — Actions
+* Action 1:
+* Action 2:
+
+📊 Data Storytelling Presentation
+* A summary of key insights and recommendations from the analysis
+* [image alt]()
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
