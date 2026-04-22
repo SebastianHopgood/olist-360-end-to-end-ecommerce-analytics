@@ -126,20 +126,45 @@ Click to view Gold Layer SQL Scripts: [All Table SQL Scripts](https://github.com
 
 ### Analyze Phase
 ---
-The Analyze phase I transitioned from data cleaning to exploratory and advanced analysis using SQL. My goal was to move beyond simple numbers and uncover the "why" behind the Olist Store’s performance
+The Analyze phase focused on exploring Olist Store’s performance by combining SQL-based transformations with Power BI visual analysis. The goal was to evaluate logistics efficiency, seller distribution, and customer satisfaction to understand key drivers of business performance
 
-To ensure a high-performance and insightful dashboard, I focused on three technical pillars:
-* Pre-Aggregation & View Creation: I developed SQL views to aggregate millions of raw transaction records into streamlined summaries by state, category, and seller. This optimized data loading times for the final visualization
-* Feature Engineering (Calculated Columns): I created custom logic to calculate critical business KPIs, such as Lead Time Days (the delta between purchase and delivery) and On-Time Delivery Status (comparing actual delivery vs. estimated dates)
-* Intertwined Insights: I performed multi-table joins to correlate disparate data points—specifically linking Logistics Performance directly to Customer Review Scores—to prove the business impact of shipping delays
+Sales & Seller Strategy
+---
+The Approach:
+* **Identified High-Performing Sellers:**
+* A SQL query using window functions was used to classify sellers into the top 10% by sales volume. This segment highlights high-capacity sellers that could be prioritized for promotional opportunities to increase platform sales
+* **Top Product Revenue Contribution Analysis:**
+* SQL and DAX were used to identify the top 5 product categories by revenue, along with a Top 10 breakdown for comparison. This helped quantify revenue concentration and communicate how a small number of categories contribute significantly to total revenue
+* **Time Intelligence Implementation:**
+* A dedicated date table was created in Power BI and connected to transactional data to enable time-based analysis. This allowed monthly revenue trends (2016–2018) to be tracked and product category performance to be evaluated over time
+* **Seller vs Customer Distribution Analysis:**
+* A geographic comparison was conducted in Power BI to evaluate seller concentration against customer distribution by state. This highlighted regions with high demand but relatively low seller presence, indicating potential market expansion opportunities
+
+High-Performing Sellers SQL View:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
+
+* Top Products SQL Analsysis:
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
+
+* Top Product KPI Power BI:
+*  [image alt](put dax pic in here)
+
 
 Logistics & Customer Experience
 ---
-The Approach:
-* **Lead Time Benchmarking:** Used custom-engineered lead_time_days to aggregate delivery data by Brazilian State and normalize performance across corridors
-* **Failure Rate KPI:** Leveraged the shipping_delays classification (Delayed vs. On-Time) to identify "high-pain" regions where deliveries exceed estimated dates
-* **Satisfaction Gap Analysis:** Compared average review scores across the shipping_delays categories to quantify the "Satisfaction Penalty"
+* **Data Preparation using DML transformations:**
+* Additional calculated columns were created to support logistics analysis, including Seller Processing Days, Estimated Delivery Days, Days Delayed, and Lead Time Days. A Shipping Status field was also created using a CASE statement to classify orders into On-Time and Delayed categories
+* **State-Level Logistics Performance Analysis (Power BI):**
+* Average lead time and estimated delivery time were analyzed across Brazilian states to assess regional logistics efficiency. Visual comparisons were used to identify whether any states exceeded estimated delivery thresholds (none exceeded on average), highlighting consistent delivery performance across regions
+* **Customer Satisfaction vs Shipping Performance:**
+* Shipping delays were analyzed against customer review scores (1–5) to evaluate the impact of logistics performance on satisfaction. This helped assess whether delays correlate with reduced customer sentiment and identify thresholds where satisfaction begins to decline
+* **Root Cause Exploration of Customer Dissatisfaction:**
+* Review scores were segmented against delivery performance metrics to explore potential drivers of dissatisfaction. This analysis focused on identifying whether shipping delays were a primary factor affecting customer sentiment or if other variables contributed
 
+
+
+Logistics & Customer Experience
+--- 
 Adding Calculated and Grouping Columns:
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/db8ff1754a4beac412fe53424a691d0259e167e0/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/new_logistics_columns_picture.png)
 
