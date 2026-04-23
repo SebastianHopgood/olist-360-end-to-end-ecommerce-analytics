@@ -39,9 +39,6 @@ WHERE order_status IN ('Delivered', 'Shipped')
 STEP 3: DELIVERY PROMISE ANALYSIS (EXPECTED LEAD TIME)
 */
 
-
- 
- 
   -- Create column for the total expected delivery duration
 ALTER TABLE `olist-360-e-commerce.analytical_data.orders_fact`
 ADD COLUMN estimated_delivery_days INT64;
