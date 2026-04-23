@@ -231,20 +231,20 @@ This phase translates insights from the analysis into actionable business recomm
 ## 📂 Project Structure
 ```text
 ├── data/
-│   ├── cleanned_data_previews     # Bronze: Cleaned table screenshots
-│   └── raw_datasets               # Silver/Gold: Original Olist datasets
+│   ├── cleanned_data_previews     # Bronze Layer: Original Olist datasets
+│   └── raw_datasets               # Silver/Gold Layers: Cleaned table screenshots
 ├── sql_scripts/
 │   ├── 02_silver/           # Data cleaning & standardization
 │   ├── 03_gold/             # Star Schema modeling (Fact/Dim/Date tables)
-│   └── analysis/            # Strategic queries (Top 10% sellers, lead times, etc.)
+│   └── analysis/            # Strategic queries (.sql) and visual previews (.png)
 ├── dashboard/
-│   ├── dashboard_pictures            # Analysis Power BI README pictures
-│   └── interactive_dashboard_link    # Power BI dashboard link
+│   ├── dashboard_pictures            # README dashboard visuals
+│   └── interactive_dashboard_link    # Link to the live Power BI report
 ├── documentation/
-│   └── olist_360_project_scope_of_work.pdf    # Scope of Work document
+│   └── olist_360_project_scope_of_work.pdf    # Professional Scope of Work (SOW)
 ├── presentation/
-│   └── executive_insights_powerpoint.pptx     # Final Insights Presentation
-└── README.md    # Project documentation
+│   └── executive_insights_powerpoint.pptx     # Final Stakeholder Presentation
+└── README.md    # Main project documentation
 ```
 
 
