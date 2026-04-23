@@ -243,4 +243,6 @@ This phase translates insights from the analysis into actionable business recomm
 ```
 
 ## ⚠️ Data Limitations & Future Work
-- List data constriants and future improvements to improve or how i handeled data constriants
+* **Date Gaps :** Data from months January 2016-August 2016 and September 2018-December 2018 is missing. *Future Work: Acquire the remaining 2018 datasets to complete a full 3-year growth study*
+* **Marketplace Profitability:** Without specific commission rates or operating costs, analysis is limited to Total Sales rather than Olist’s actual Net Profit. *Future Work: Integrate Olist’s fee structure to calculate actual platform net profit*
+* **Retention Limits:** 98.8% of users are one-time buyers. *Future Work: Conduct a Cohort Analysis to identify what drives the small percentage of returning "power users"
