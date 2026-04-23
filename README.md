@@ -1,20 +1,28 @@
 # 🚀 Olist 360: E-Commerce End-to-End Business Intelligence (EDA)
 
 ## 📋 Overview
-The project analyzes a real-world Brazilian ecommerce public dataset of orders made at the Olist Store, containing approximately 100,000 orders between 2016 and 2018. The dataset is structured across 9 relational tables covering customers, orders, locations, products, categories, sellers, and reviews, enabling a full view of the end-to-end e-commerce process from purchase to delivery and customer feedback
+This project analyzes a real-world multi-seller marketplace dataset from Olist, a Brazilian e-commerce platform. The analysis covers approximately 100,000 orders from 2016 to 2018 across 9 relational tables. This ecosystem provides a 360-degree view of the interactions between independent sellers, customers, and logistics providers.
+The goal was to simulate a professional data environment by transforming raw data into a structured data warehouse, an interactive dashboard, and a strategic executive summary.
 
-The goal of the project is to simulate a real business scenario by developing an interactive dashboard for stakeholders to visualize business answers along with an executive summary on how to improve the business. To support this, raw CSV data was imported and integrated into SQL using Excel, BigQuery datasets were created and changed within SQL using DML and DDL, then cleaned and transformed using SQL processes, and multiple tables were joined together to create a star schema for analysis. The cleaned datasets were connected to Power BI, where an interactive dashboard was built and used to help develop the perfect executive insight presentation
+Technical Workflow:
+* **Data Integration:** Imported raw CSV files into BigQuery via Excel, establishing the initial data stage
+* **Medallion Architecture:** Structured the project into Bronze (Raw), Silver (Cleaned), and Gold (Analytical) layers to ensure a high-quality data pipeline
+* **Data Engineering:** Used DDL for schema design and DML to engineer new columns (feature engineering) specifically for deep-dive analysis
+* **Analysis & Visualization:** Performed advanced data analysis across SQL and Power BI, joining tables into a Star Schema to power an interactive dashboard and develop data-driven executive insights
 
 ## 🎯 Objectives
-The primary goal is to provide a 360-degree view of the Olist Store to measure preformance, increase operational efficiency, improve customer satisfaction, and develop a selling strategy. Stakeholders requested to know:
-* Sales: Identify the top 5 product categories by order count and analyze monthly revenue trends from 2016 to 2018 to understand how category performance changes over time?
-* Logistics: Determine the average lead time in days for each Brazilian state and identify regions where the average exceeds the estimated delivery date?
-* Satisfaction: What is the satisfaction 'penalty' for shipping delays, what is the root cause of dissatisfied customers, at what threshold does customer sentiment collapse, and average review scores (1-5)?
-* Strategy: Identify sellers in the top 10% by sales volume and compare seller concentration with customer distribution by state to highlight regions where demand is high but seller presence is relatively low?
+The primary goal is to provide a 360-degree view of the Olist marketplace ecosystem to measure performance, increase operational efficiency, improve customer satisfaction, and optimize seller recruitment strategy. 
+
+To identify core business needs, I developed SMART (Specific, Measurable, Achievable, Relevant, Time-bound) questions focused on four key pillars:
+
+* **Sales:** Identify the top 5 product categories by total revenue and analyze monthly revenue trends from 2016 to 2018 to understand how category performance changes over time
+* **Logistics:** Determine the average lead time in days for each Brazilian state and identify regions where the average exceeds the estimated delivery date
+* **Satisfaction:** What is the satisfaction 'penalty' for shipping delays, what is the root cause of dissatisfied customers, at what threshold does customer sentiment collapse, and average review scores (1-5)
+* **Strategy:** Identify sellers in the top 10% by sales volume and compare seller concentration with customer distribution by state to highlight regions where demand is high but seller presence is relatively low
 
 ## 🛠️ Tools Used
-* Excel: Used for initial data inspection, metadata documentation, and as a bridge to import raw CSV files into the SQL environment
-* SQL (BigQuery): The backbone of the project. Used for DDL, DQL, data cleaning, performing complex multi-table joins, and developing ETL pipelines to create a structured Star Schema
+* Excel: Used for initial data inspection and as a bridge to import raw CSV files into the SQL environment
+* SQL (BigQuery): The backbone of the project. Used for anlysis, DDL, DQL, DML, data cleaning, data warehousing, performing complex multi-table joins, and developing ETL pipelines to create a structured Star Schema
 * Power BI: Used to build an interactive, multi-page dashboard. Leveraged DAX (Data Analysis Expressions) to create custom measures for KPIs, time intelligence, and visualizations
 * GitHub/Git: Utilized for project documentation, version control of code scripts, and hosting the portfolio
 * Vs Code: Joined with Git to control project codes files
