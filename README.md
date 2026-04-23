@@ -219,20 +219,32 @@ This phase translates insights from the analysis into actionable business recomm
 ## 📦 Deliverables
 
 ### SOW (Scope of Work):
-* project_scope_of_work: Used to outline the project main goals and considerations
+* olist_360_project_scope_of_work
 
-### Access to SQL and DAX Scipts:
-* sql scripts folder: Includes silver, gold, and analysis sql scripts. Silver and Gold show my process of cleaning and transfering data from bronze to silver, and create a star schema by developing final analytical tables and views. Analysis scripts show my process of major queries I wrote to gain deep insights to help understand the data
+### Access to SQL Scipts & Repository:
+* SQL scripts folder
 
 ### Dashboard Preview
-* Olist_360_Dashboard: The source file for the interactive Power BI report
-* Executive_Insights_Presentation: A Summarized PowerPoint presentation highlighting key preformance trends, data-driven insights from the 2016–2018 period, and strategic recommendations for the business
-
-### Executive Summary:
-* Executive_Summary: A concise report summarizing the key insights and data backed recommendations for the Olist Stakeholders
+* Olist_360_Dashboard file
+* Executive_Insights_Presentation file
 
 ## 📂 Project Structure
--  List of folders and files in the project and what they are
+├── data/
+│   ├── raw/                 # Bronze: Original Olist datasets
+│   └── previews/            # Silver/Gold: Cleaned table screenshots
+├── sql_scripts/
+│   ├── 01_bronze/           # Ingestion & initial schema DDL
+│   ├── 02_silver/           # Data cleaning & standardization
+│   ├── 03_gold/             # Star Schema modeling (Fact/Dim tables)
+│   └── analysis/            # Strategic queries (Top 10% sellers, lead times)
+├── dashboard/
+│   └── olist_analysis.pbix  # Power BI file
+├── documentation/
+│   └── Olist_360_SOW.pdf    # Scope of Work document
+├── presentation/
+│   └── Executive_Insights.pdf # Final Insights Presentation
+└── README.md  
+
 
 ## ⚠️ Data Limitations & Future Work
 - List data constriants and future improvements to improve or how i handeled data constriants
