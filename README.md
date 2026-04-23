@@ -219,7 +219,7 @@ This phase translates insights from the analysis into actionable business recomm
 ## 📦 Deliverables
 
 *   **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/main/documentation/olist_360_project_scope_of_work.pdf)
-*   **Technical Codebase:** [SQL Script Repository]([./sql_scripts/](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts))
+*   **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
 *   **Business Intelligence:** [Interactive Power BI Dashboard]()
 *   **Executive Summary:** [Executive Insights Presentation]()
 
