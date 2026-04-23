@@ -183,7 +183,7 @@ Key Findings:
 * Total Orders: 114k
 
 Sales & Seller Strategy Dashboard Preview:
-* [image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/sales_and_seller_strategy_dashboard_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/sales_and_seller_strategy_dashboard_preview.png)
 
 🚚 Logistics & Customer Experience:
 ---
@@ -193,7 +193,7 @@ Key Findings:
 * **Seasonal Bottlenecks:** Late order percentages consistently spike during Q1 and Q4 across all years, identifying these periods as high-risk for customer satisfaction due to logistics strain
 
 Logistics & Customer Experience Dashbaord Preview:
-* [image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/logistics_and_customer_experience_dashboard_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/logistics_and_customer_experience_dashboard_preview.png)
 
 ### ACT Phase
 ---
