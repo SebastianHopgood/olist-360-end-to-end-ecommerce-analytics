@@ -40,10 +40,10 @@ The Ask Phase establishes the business context by defining core objectives, iden
 * Olist CEO and Logistics Department
 
 **Ask SMART (Specific, Measurable, Achievable, Relevant, Time-bound) Questions to Identify Business Problems/Needs:**
-* Sales: Identify the top 5 product categories by total revenue and analyze monthly revenue trends from 2016 to 2018 to understand how category performance changes over time
-* Logistics: Determine the average lead time in days for each Brazilian state and identify regions where the average exceeds the estimated delivery date
-* Satisfaction: What is the satisfaction 'penalty' for shipping delays, what is the root cause of dissatisfied customers, at what threshold does customer sentiment collapse, and average review scores (1-5)
-* Strategy: Identify sellers in the top 10% by sales volume and compare seller concentration with customer distribution by state to highlight regions where demand is high but seller presence is relatively low
+* **Sales:** Identify the top 5 product categories by total revenue and analyze monthly revenue trends from 2016 to 2018 to understand how category performance changes over time
+* **Logistics:** Determine the average lead time in days for each Brazilian state and identify regions where the average exceeds the estimated delivery date
+* **Satisfaction:** What is the satisfaction 'penalty' for shipping delays, what is the root cause of dissatisfied customers, at what threshold does customer sentiment collapse, and average review scores (1-5)
+* **Strategy:** Identify sellers in the top 10% by sales volume and compare seller concentration with customer distribution by state to highlight regions where demand is high but seller presence is relatively low
 
 **Develop A Scope of Work (SOW):**
 * A SOW was created to provide stakeholders with a clear project roadmap, outlining the project's boundaries, key milestones, and deliverables
@@ -64,10 +64,10 @@ The Prepare Phase focuses on data discovery, source validation, and bias assessm
 
 Before ingestion, I performed data profiling on the raw metadata and used Excel to audit geographic and temporal distributions. This revealed:
 
-* Georaphic Bias: 40% of orders originate from São Paulo. National averages are heavily skewed by this high-infrastructure region, potentially masking slower delivery times in Northern regions
-* Temporal Bias: The dataset concludes in September 2018; performance trends in all years had some months with little to no data
-* Resonse Bias:  Review scores (1-5) tend toward "extremes." Customers typically provide feedback for exceptionally good or very poor experiences, leaving a gap in "neutral" sentiment
-* Retention Bias: 98.8% of customers are one-time buyers, making it difficult to calculate long-term loyalty trends
+* **Georaphic Bias:** 40% of orders originate from São Paulo. National averages are heavily skewed by this high-infrastructure region, potentially masking slower delivery times in Northern regions
+* **Temporal Bias:** The dataset concludes in September 2018; performance trends in all years had some months with little to no data
+* **Resonse Bias:**  Review scores (1-5) tend toward "extremes." Customers typically provide feedback for exceptionally good or very poor experiences, leaving a gap in "neutral" sentiment
+* **Retention Bias:** 98.8% of customers are one-time buyers, making it difficult to calculate long-term loyalty trends
 
 **Data Organization:**
 * View all 9 raw relational datasets: [Raw Data](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/raw_datasets)
@@ -85,54 +85,46 @@ Before ingestion, I performed data profiling on the raw metadata and used Excel 
 ### PROCESS Phase (Medallion Architecture)
 ---
 
-🥉**Bronze (Raw):**
+🥉 **Bronze (Raw Layer):**
 ---
 The Bronze Layer serves as the landing zone for raw data, ensuring a permanent record of the original source files and preserving data lineage for auditing
-* Initial data profiling and quality audit using Microsoft Excel to remove unnecessary columns, fix headers with proper names and snake casing, and removing broken fromatting to ensure a successful data load. Columns that were removed were: review_comment_title and review comment message
-* Ingested 9 raw Olist datasets from CSVs into BigQuery without modifications to preserve data lineage
-* Validated data post data integration to confirm proper data load, correct column names, and correct data types
-* Bronze/Raw Data Layout:
+* **Data Profiling:** Conducted an initial audit in Excel to standardize headers (snake_case) and remove broken formatting
+* **Dimensional Reduction:** Removed high-cardinality/low-utility columns (review_comment_title, review_comment_message) to optimize storage and processing
+* **Ingestion:** Loaded 9 raw datasets into BigQuery without modification to maintain an immutable record of the source data
+* **Bronze/Raw Data Layout:**
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/7202dc2ddd170f9ed65a5f78989c84466ffaacd2/data/raw_data_intergration_preview.png)
 
-**Silver (Staging/Cleaned):**
+🥈 **Silver (Staging/Cleaned Layer):**
 ---
-The Silver Layer focus is on data quality and standardization, transforming raw files into clean, validated, and gatting staging tables ready for modeling
-* Schema Enforcement: Defined DDL schemas to ensure data types (Dates, Floats, Strings, etc.)
-* Cleaning & Standardization: Used SQL to handle nulls, filtered out missing primary keys, prepared data for proper joins, implemented headder correction, remove duplicates, string normalization, and standardize formats across the 9 datasets to prep data for readability and data digestion for Power BI visualizations
-* Data Validation: Ensured data is accurate, complete, and consistent across all datasets pre and post data integration
-* View clean data previews: [View All Cleanned Data Previews](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/cleaned_data_previews)
-* View indepth SQL scripts and details via sql script files:
-[View All SQL Cleaning Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/02_silver)
-* Example of Code:
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/c1b512c2cc032e9508f922e1ff9b18edf6bd15e6/data/SQL_query_staged_orders_picture.png)
-* Silver/Staging Data Layout:
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/707e180cd0e5e59e27f7d6d5dd2df22e8d6f9cda/data/BigQuery_staging_dataset_layout.png)
+The Silver Layer focuses on data quality and standardization, transforming raw files into clean, validated staging tables ready for modeling
 
-**Gold (Curated):**
+* **Schema Enforcement:** Defined DDL schemas to ensure strict data types (Dates, Floats, Strings) across all tables.
+* **Standardization:** Used SQL to handle null values, filter missing primary keys, normalize strings, and remove duplicates.
+* **Validation:** Verified data consistency and referential integrity pre- and post-ingestion to ensure reliability for downstream reporting.
+* **Scripts:**
+* View SQL Cleaning Scripts: [View All SQL Cleaning Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/02_silver)
+* View Data Previews: [View All Cleanned Data Previews](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/cleaned_data_previews)
+* Example of Code: ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/c1b512c2cc032e9508f922e1ff9b18edf6bd15e6/data/SQL_query_staged_orders_picture.png)
+* Silver/Staging Data Layout: ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/707e180cd0e5e59e27f7d6d5dd2df22e8d6f9cda/data/BigQuery_staging_dataset_layout.png)
+
+🥇 **Gold (Curated/Analytical Layer):**
 ---
-The Gold Layer represents the final, cleaned, and modeled state of the data. I transformed the normalized staged data into a Star Schema to optimize for analytical performance and business reporting
+The Gold Layer represents the final modeled state. I transformed the normalized staging data into a Star Schema to optimize analytical performance and business reporting
 **The Star Schema:**
-* Fact Table (main table): orders_fact (joined datasets: orders, order_items, order_payments, order_reviews)
-* Dimension Tables: dim_customers, dim_sellers, dim_date, dim_geolocation, dim_products (joined datasets: dim_products and category_name_translation)
+* Fact Table: orders_fact (Integrated from: orders, order_items, order_payments, order_reviews)
+* Dimension Tables: dim_customers, dim_sellers, dim_date, dim_geolocation, dim_products (Joined with category translations)
 
-**Relationships:**
-* orders_fact serves as the central hub 
-* dim_customers, dim_sellers, and dim_products connect to orders_fact via their respective IDs (customer_id, seller_id, product_id).
-* dim_date connects to the fact table's order_purchase_timestamp via date_key.
-* dim_geolocation acts as a supporting dimension, joining to dim_customers and dim_sellers via zip_code_prefix to facilitate geographic density mapping.
-
-**Transformation Logic**:
-I implemented the following engineering best practices in this layer:
-* Deduplication: Pre-aggregated payments to prevent row-doubling and ensure revenue accuracy
-* Language Translation: Joined category lookups to provide English labels for English-speaking stakeholders
-* Time Intelligence: Built a custom dim_date table with Monday-start logic and weekend flags for seasonal analysis
-* Spatial Optimization: Aggregated geolocation coordinates to the Zip Prefix level to protect PII and improve map rendering speeds
+**Transformation Logic & Best Practices**:
+* **Revenue Accuracy:** Pre-aggregated payment data to prevent "row-doubling" (fan-out) during joins, ensuring 100% financial accuracy.
+* **Language Translation:** Joined category lookups to provide English labels for global stakeholder readability.
+* **Time Intelligence:** Engineered a custom dim_date table with Monday-start logic and weekend flags for seasonal trend analysis.
+* **Spatial Optimization:** Aggregated geolocation coordinates to the Zip Prefix level to protect PII and significantly improve map rendering speeds.
 
 **SQL Documentation:**
-Click to view Gold Layer SQL Scripts: [All Table SQL Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/03_gold)
-* Example of Code:
+SQL Scripts Preview: [All Table SQL Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/03_gold)
+* **Example of Code:**
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/b7f97f79a975b9fc0cc67228064e96175f8691ec/data/order_fact_query_preview.png)
-* Gold/Analytical Layer Layout:
+* **Gold/Analytical Layer Layout:**
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/8641a15f83b5192e12b1f00bed2ff07083f72f1e/data/gold_layer_layout_picture.png)
 
 ### Analyze Phase
