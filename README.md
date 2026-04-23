@@ -211,22 +211,17 @@ This phase translates insights from the analysis into actionable business recomm
 
 📊 Data Storytelling Presentation
 * A summary of key insights and recommendations from the analysis
-* [image alt]()
+* [Locate Presentation File]()
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
 
 ## 📦 Deliverables
 
-### SOW (Scope of Work):
-* olist_360_project_scope_of_work
-
-### Access to SQL Scipts & Repository:
-* SQL scripts folder
-
-### Dashboard Preview
-* Olist_360_Dashboard file
-* Executive_Insights_Presentation file
+*   **Project Strategy:** [Scope of Work]()
+*   **Technical Codebase:** [SQL Script Repository](./sql_scripts/)
+*   **Business Intelligence:** [Interactive Power BI Dashboard](./dashboard/)
+*   **Executive Summary:** [Executive Insights Presentation](./presentation/executive_insights_powerpoint.pptx)
 
 ## 📂 Project Structure
 ```text
@@ -246,7 +241,6 @@ This phase translates insights from the analysis into actionable business recomm
 │   └── executive_insights_powerpoint.pptx     # Final Stakeholder Presentation
 └── README.md    # Main project documentation
 ```
-
 
 ## ⚠️ Data Limitations & Future Work
 - List data constriants and future improvements to improve or how i handeled data constriants
