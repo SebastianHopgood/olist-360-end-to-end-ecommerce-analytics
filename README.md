@@ -131,60 +131,44 @@ The Gold Layer represents the final modeled state. I transformed the normalized 
 
 ### Analyze Phase
 ---
-The Analyze phase focused on exploring Olist Store’s performance by combining SQL-based transformations with Power BI visual analysis. The goal was to evaluate logistics efficiency, seller distribution, and customer satisfaction to understand key drivers of business performance
+The Analyze phase focused on exploring the Olist Marketplace’s performance by combining SQL-based transformations with Power BI visual analysis. The goal was to evaluate logistics efficiency, seller distribution, and customer satisfaction to identify the key drivers of business performance
 
-Sales & Seller Strategy
+**Sales & Seller Strategy**
 ---
-The Approach:
-* **Identified High-Performing Sellers:**
-* A SQL query using window functions was used to classify sellers into the top 10% by sales volume. This segment highlights high-capacity sellers that could be prioritized for promotional opportunities to increase platform sales
-* **Top Product Revenue Contribution Analysis:**
-* SQL was used to identify the top 5 product categories by revenue, along with a Top 10 breakdown for comparison. This helped quantify revenue concentration and communicate how a small number of categories contribute significantly to total revenue
-* **Time Intelligence Implementation:**
-* A dedicated date table was created in Power BI and connected to transactional data to enable time-based analysis. This allowed monthly revenue trends (2016–2018) to be tracked and product category performance to be evaluated over time
-* **Seller vs Customer Distribution Analysis:**
-* A geographic comparison was conducted in Power BI to evaluate seller concentration against customer distribution by state. This highlighted regions with high demand but relatively low seller presence, indicating potential market expansion opportunities
-* **KPI and Measure Development (Power BI / DAX):** Created calculated measures to support key metrics such as total revenue, average order value (AOV), order count, and top 5% produt categories revenue share
+**Methodology:**
+* **Segmented High-Performing Sellers:** Utilized SQL Window Functions to classify the top 10% of sellers by volume. This identifies high-capacity partners for potential promotional prioritization
+* **Revenue Concentration Analysis:** Quantified the contribution of the top 5 vs top 10 product categories by revenue, highlighting how niche segments drive the majority of platform revenue
+* **Time Intelligence Implementation:** Integrated a custom date table in Power BI to track monthly revenue cycles (2016–2018) and identify growth outliers like Health & Beauty
+* **Geographic Density Mapping:** Conducted a spatial comparison of seller concentration vs. customer demand by state to pinpoint market expansion opportunities
+* **DAX Measure Development** Created custom measures for Total Revenue, AOV, Order Count, and Category Revenue Share
 
-Evidence:
-* High-Performing Sellers (Top 10%):
+**Evidence:**
+* **High-Performing Sellers (Top 10%):**
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
 
-* Top Product Categories (Top 5 Revenue Analysis):
+* **Top Product Categories (Top 5 Revenue Analysis):**
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
-
-* Top Product KPI (DAX):
-*  [image alt](put dax pic in here)
-
 
 Logistics & Customer Experience
 ---
-The Approach:
-* **Data Preparation Using DML transformations:**
-* Additional calculated columns were created to support logistics analysis, including Seller Processing Days, Estimated Delivery Days, Days Delayed, and Lead Time Days. A Shipping Status field was also created using a CASE statement to classify orders into On-Time and Delayed categories
-* **State-Level Logistics Performance Analysis (Power BI):**
-* Average lead time and estimated delivery time were analyzed across Brazilian states to assess regional logistics efficiency. Visual comparisons were used to identify whether any states exceeded estimated delivery thresholds (none exceeded on average), highlighting consistent delivery performance across regions
-* **Customer Satisfaction vs Shipping Performance:**
-* Shipping delays were analyzed against customer review scores (1–5) to evaluate the impact of logistics performance on satisfaction. This helped assess whether delays correlate with reduced customer sentiment and identify thresholds where satisfaction begins to decline
-* **Root Cause Exploration of Customer Dissatisfaction:**
-* Review scores were segmented against delivery performance metrics to explore potential drivers of dissatisfaction. This analysis focused on identifying whether shipping delays were a primary factor affecting customer sentiment or if other variables contributed
-* **KPI and Measure Development (Power BI / DAX):**
-* Developed calculated measures for average customer rating, delivery promise accuracy, average lead days, average seller processing days, and delayed shipping penalty (rating impact)
+**Methodology:**
+* **Data Preparation Using DML transformations:** Created calculated columns for Seller Processing Time, Lead Time, and Days Delayed. Used CASE statements to categorize orders as "On-Time" vs. "Delayed"
+* **Regional Efficiency Audit:** Analyzed average lead times across Brazilian states. Confirmed that while no state exceeds the "estimated delivery date" on average
+* **Sentiment Correlation Analysis:** Mapped shipping delays against customer review scores (1–5) to identify the specific "Sentiment Collapse" threshold
+* **Logistics KPI Suite:** Developed DAX measures for Delivery Promise Accuracy, Avg. Lead Days, and the Delayed Shipping Penalty (the star-rating drop per day of delay)
 
-* Data Preperation (CASE Statements & Calculated Columns):
+* **Data Preperation** (CASE Statements & Calculated Columns):
 * ![image alt]()
 
-Evidence:
-* State-Level Logistics Performance
+**Evidence:**
+* **Data Preperation** (CASE Statements & Calculated Columns):
 * ![image alt]()
-* Delivery Delay vs Customer Satisfaction
+* **State-Level Logistics Performance:**
+* ![image alt](a Power BI table/map showing lead times vs. estimated dates)
+* **Delivery Delay vs Customer Satisfaction:**
+* ![image alt](area chart)
+* **Seller vs Customer Distribution by State:**
 * ![image alt]()
-* Customer Rating Distribution by Shipping Status
-* ![image alt]()
-* Seller vs Customer Distribution by State
-* ![image alt]()
-
-
 
 
 Adding Calculated and Grouping Columns:
