@@ -187,7 +187,7 @@ This phase summarizes key findings from the analysis to highlight business perfo
 **Sales & Seller Strategy Dashboard Preview:**
 * ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/263636c54cd337a6e7f6ba09b8d177a080867477/dashboard/dashboard_pictures/sales_and_seller_strategy_dashboard_preview.png)
 
-🚚 Logistics & Customer Experience:
+🚚 **Logistics & Customer Experience:**
 ---
 **Key Findings:**
 * **Shipping vs Customer Satisfaction:** There is a direct correlation between shipping delays and customer dissatisfaction. While the average rating is 4.0 stars, a delay of just 1 day drops the average to 3.68. Sentiment collapses at the 3-day mark (2.58 stars) and hits a floor of 1.5 stars for delays of 6+ days
@@ -198,7 +198,7 @@ This phase summarizes key findings from the analysis to highlight business perfo
 **Logistics & Customer Experience Dashboard Preview:**
 * ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/logistics_and_customer_experience_dashboard_preview.png)
 
-🧠 Information Guidance
+🧠 **Information Guidance**
 ---
 I developed 2 overlays in the interactive dashboard to provide stakeholders with knowledge to properly navigate the dashboard
 
@@ -212,23 +212,22 @@ I developed 2 overlays in the interactive dashboard to provide stakeholders with
 ---
 This phase translates insights from the analysis into actionable business recommendations. It outlines what the business should do next to improve performance in areas such as sales, logistics, and customer experience, based on the patterns and issues identified in the data.
 
-📊 Interactive Dashboard
+📊 **Interactive Dashboard**
 * A summary of key insights and recommendations from the analysis
 * **Raw Link (Copy/Paste to open a new tab):**
 * `https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439`
 
-🛒 Sales & Seller Strategy — Actions
+🛒 **Sales & Seller Strategy — Actions**
 * **Regional Seller Acquisition:** Launch a targeted recruitment campaign for sellers in SP, MG, PR, RJ, and SC. By increasing seller density in these high-demand zones, Olist can reduce cross-country shipping distances and improve regional competitiveness
 * **Category-Specific Incentives:** Since Health & Beauty is the primary growth driver, Olist should offer lower commission rates or "featured placement" for new sellers in this category to capitalize on the upward trend
 * **High-Volume Seller Support:** Provide dedicated account management or premium tools for the Top 10% of sellers to ensure the core 62.4% of revenue (from top 10 categories) remains stable
 
-🚚 Logistics & Customer Experience — Actions
+🚚 **Logistics & Customer Experience — Actions**
 * **Automated Delay Interventions:** Implement an automated "Early Warning System" that triggers at 48 hours of seller processing time. This gives Olist a 24-hour window to nudge sellers before hitting the 3-day sentiment collapse threshold
 * **Predictive Delivery Windows:** Adjust the "Estimated Delivery Date" algorithm to be more conservative during Q1 and Q4. By proactively extending the promised date during peak seasons, Olist protects the 92.1% accuracy rate and prevents the 1.5-star "late penalty"
 * **Seller Performance Tiering:** Incorporate the 1.5-star "late penalty" data into seller KPIs. Sellers who consistently exceed the 12.5-day average lead time should receive lower search rankings to protect the overall marketplace reputation
 
 ## 📦 Deliverables
-
 *   **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/main/documentation/olist_360_project_scope_of_work.pdf)
 *   **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
 *   **Interactive Dashboard (Copy/Paste to open a new tab):** `https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439` 
