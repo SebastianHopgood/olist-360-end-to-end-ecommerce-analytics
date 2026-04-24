@@ -49,7 +49,7 @@ The Ask Phase establishes the business context by defining core objectives, iden
 * **Strategy:** Identify sellers in the top 10% by sales volume and compare seller concentration with customer distribution by state to highlight regions where demand is high but seller presence is relatively low
 
 **Develop A Scope of Work (SOW):**
-* A SOW was created to provide stakeholders with a clear project roadmap, outlining the project's boundaries, key milestones, and deliverables
+* A SOW was created to provide stakeholders with a clear project roadmap, outlining the project's boundaries, in scope activities, out-of-scope activities, key milestones, and deliverables
 * [View SOW](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/fd4d6646d8c9e48c85b625cb5472204c1d4656db/documentation/olist_360_project_scope_of_work.pdf)
 
 ### PREPARE Phase
@@ -67,20 +67,20 @@ The Prepare Phase focuses on data discovery, source validation, and bias assessm
 
 Before ingestion, I performed data profiling on the raw metadata and used Excel to audit geographic and temporal distributions. This revealed:
 
-* **Georaphic Bias:** 40% of orders originate from São Paulo. National averages are heavily skewed by this high-infrastructure region, potentially masking slower delivery times in Northern regions
+* **Geographic Bias:** 40% of orders originate from São Paulo. National averages are heavily skewed by this high-infrastructure region, potentially masking slower delivery times in Northern regions
 * **Temporal Bias:** The dataset concludes in September 2018; performance trends in all years had some months with little to no data
-* **Resonse Bias:**  Review scores (1-5) tend toward "extremes." Customers typically provide feedback for exceptionally good or very poor experiences, leaving a gap in "neutral" sentiment
+* **Response Bias:**  Review scores (1-5) tend toward "extremes." Customers typically provide feedback for exceptionally good or very poor experiences, leaving a gap in "neutral" sentiment
 * **Retention Bias:** 98.8% of customers are one-time buyers, making it difficult to calculate long-term loyalty trends
 
 **Data Organization:**
 * View all 9 raw relational datasets: [Raw Data](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/raw_datasets)
 
 **Determining What Tools to Use:**
-* Excel, SQL, Power BI, PowerPoint, GitHub/Git, VS_Code
+* Excel, SQL, Power BI, PowerPoint, GitHub/Git, VS Code
 
 **Data ROCCC (Reliable, Original, Comprehensive, Current, Cited):**
 * Reliable: High - Real-world public dataset provided by Olist, a major Brazilian e-commerce platform
-* Origional: High - First-party data directly from the source
+* Original: High - First-party data directly from the source
 * Comprehensive: High - Includes 100k+ orders, locations, payments, and reviews across 9 relational tables
 * Current: Data spans 2016–2018. While not real-time, it is excellent for historical analysis.
 * Cited: High - Fully documented and hosted on Kaggle with clear ownership
