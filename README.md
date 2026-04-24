@@ -50,7 +50,7 @@ The Ask Phase establishes the business context by defining core objectives, iden
 
 **Develop A Scope of Work (SOW):**
 * A SOW was created to provide stakeholders with a clear project roadmap, outlining the project's boundaries, in scope activities, out-of-scope activities, key milestones, and deliverables
-* [View SOW](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/fd4d6646d8c9e48c85b625cb5472204c1d4656db/documentation/olist_360_project_scope_of_work.pdf)
+* [View SOW](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/fd4d6646d8c9e48c85b625cb5472204c1d4656db/documentation/olist_360_project_scope_of_work.pdf)
 
 ### PREPARE Phase
 ---
@@ -73,7 +73,7 @@ Before ingestion, I performed data profiling on the raw metadata and used Excel 
 * **Retention Bias:** 98.8% of customers are one-time buyers, making it difficult to calculate long-term loyalty trends
 
 **Data Organization:**
-* View all 9 raw relational datasets: [Raw Data](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/raw_datasets)
+* View all 9 raw relational datasets: [Raw Data](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/main/data/raw_datasets)
 
 **Determining What Tools to Use:**
 * Excel, SQL, Power BI, PowerPoint, GitHub/Git, VS Code
@@ -95,7 +95,7 @@ The Bronze Layer serves as the landing zone for raw data, ensuring a permanent r
 * **Dimensional Reduction:** Removed high-cardinality/low-utility columns (review_comment_title, review_comment_message) to optimize storage and processing
 * **Ingestion:** Loaded 9 raw datasets into BigQuery without modification to maintain an immutable record of the source data
 * **Bronze/Raw Data Layout:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/7202dc2ddd170f9ed65a5f78989c84466ffaacd2/data/raw_data_intergration_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/7202dc2ddd170f9ed65a5f78989c84466ffaacd2/data/raw_data_intergration_preview.png)
 
 🥈 **Silver (Staging/Cleaned Layer):**
 ---
@@ -105,11 +105,11 @@ The Silver Layer focuses on data quality and standardization, transforming raw f
 * **Standardization:** Used SQL to handle null values, filter missing primary keys, normalize strings, and remove duplicates.
 * **Validation:** Verified data consistency and referential integrity pre- and post-ingestion to ensure reliability for downstream reporting.
 * **Scripts:**
-* View SQL Cleaning Scripts: [View All SQL Cleaning Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/02_silver)
-* View Data Previews: [View All Cleaned Data](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/data/cleaned_data_previews)
-* **Example of Code:** ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/c1b512c2cc032e9508f922e1ff9b18edf6bd15e6/data/SQL_query_staged_orders_picture.png)
+* View SQL Cleaning Scripts: [View All SQL Cleaning Scripts](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/main/sql%20scripts/02_silver)
+* View Data Previews: [View All Cleaned Data](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/main/data/cleaned_data_previews)
+* **Example of Code:** ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/c1b512c2cc032e9508f922e1ff9b18edf6bd15e6/data/SQL_query_staged_orders_picture.png)
 * **Silver/Staging Data Layout:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/707e180cd0e5e59e27f7d6d5dd2df22e8d6f9cda/data/BigQuery_staging_dataset_layout.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/707e180cd0e5e59e27f7d6d5dd2df22e8d6f9cda/data/BigQuery_staging_dataset_layout.png)
 
 🥇 **Gold (Curated/Analytical Layer):**
 ---
@@ -122,11 +122,11 @@ The Gold Layer represents the final modeled state. I transformed the normalized 
 * **Spatial Optimization:** Aggregated geolocation coordinates to the Zip Prefix level to protect PII and significantly improve map rendering speeds.
 
 **SQL Documentation:**
-* SQL Scripts Preview: [All Table SQL Scripts](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/main/sql%20scripts/03_gold)
+* SQL Scripts Preview: [All Table SQL Scripts](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/main/sql%20scripts/03_gold)
 * **Example of Code:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/b7f97f79a975b9fc0cc67228064e96175f8691ec/data/order_fact_query_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/b7f97f79a975b9fc0cc67228064e96175f8691ec/data/order_fact_query_preview.png)
 * **Gold/Analytical Layer Layout:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/8641a15f83b5192e12b1f00bed2ff07083f72f1e/data/gold_layer_layout_picture.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/8641a15f83b5192e12b1f00bed2ff07083f72f1e/data/gold_layer_layout_picture.png)
 
 ### Analyze Phase
 ---
@@ -143,10 +143,10 @@ The Analyze phase focused on exploring the Olist Marketplace’s performance by 
 
 **Evidence:**
 * **High-Performing Sellers (Top 10%):**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/f1554a3611e1cb3846d51c578ec1c101e385c40b/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/seller_performance_top_10%25.png)
 
 * **Top Product Categories (Top 5 Revenue Analysis):**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/bdfb749c96e8c223c14a61452bcb5adea9cb3014/sql%20scripts/anlaysis_scripts/sales_and_seller_strategy/top_5_prodcut_categories_picture.png)
 
 Logistics & Customer Experience
 ---
@@ -158,13 +158,13 @@ Logistics & Customer Experience
 
 **Evidence:**
 * **Data Preparation** (CASE Statements & Calculated Columns):
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/column_data_preperation_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/sql%20scripts/anlaysis_scripts/logistics_and_customer_experience/column_data_preperation_preview.png)
 * **State-Level Logistics Performance:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/state_level_logistics_visualization_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/state_level_logistics_visualization_preview.png)
 * **Delivery Delay vs Customer Satisfaction:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/delivery_delay_vs_customer_satisfaction_visualization_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/delivery_delay_vs_customer_satisfaction_visualization_preview.png)
 * **Seller vs Customer Distribution by State:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/seller_vs_customer_distribution_by_state_visualization_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/seller_vs_customer_distribution_by_state_visualization_preview.png)
 
 **The Star Schema:**
 * ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/68f66371c9b68ef43e574f97741283b1b60e100b/dashboard/star_schema_modeling_picture.png)
@@ -185,7 +185,7 @@ This phase summarizes key findings from the analysis to highlight business perfo
 * Total Orders: 114,000+
 
 **Sales & Seller Strategy Dashboard Preview:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/263636c54cd337a6e7f6ba09b8d177a080867477/dashboard/dashboard_pictures/sales_and_seller_strategy_dashboard_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/263636c54cd337a6e7f6ba09b8d177a080867477/dashboard/dashboard_pictures/sales_and_seller_strategy_dashboard_preview.png)
 
 🚚 Logistics & Customer Experience:
 ---
@@ -196,17 +196,17 @@ This phase summarizes key findings from the analysis to highlight business perfo
 * **Seasonal Bottlenecks:** Late order percentages consistently spike during Q1 and Q4 across all years, identifying these periods as high-risk for customer satisfaction due to logistics strain
 
 **Logistics & Customer Experience Dashboard Preview:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/logistics_and_customer_experience_dashboard_preview.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/1a596a2fd4c54dd0dfb1bf8cdac39b3e519a9da9/insights/dashboard_pictures/logistics_and_customer_experience_dashboard_preview.png)
 
 🧠 Information Guidance
 ---
 I developed 2 overlays in the interactive dashboard to provide stakeholders with knowledge to properly navigate the dashboard
 
 **Sales & Seller Strategy Overlay:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/8186ec99c22e7be29bdfdad9ea6144fc220e3ebe/dashboard/dashboard_pictures/sales_and_seller_strategy_overlay.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/8186ec99c22e7be29bdfdad9ea6144fc220e3ebe/dashboard/dashboard_pictures/sales_and_seller_strategy_overlay.png)
 
 **Logistics & Customer Experience Overlay:**
-* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/633094a9bcbbbad2e8b28c7171c45930a3aef257/dashboard/dashboard_pictures/logistics_and_customer_experience_overlay.png)
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/633094a9bcbbbad2e8b28c7171c45930a3aef257/dashboard/dashboard_pictures/logistics_and_customer_experience_overlay.png)
 
 ### ACT Phase (Key Insights & Recommendations)
 ---
@@ -229,10 +229,10 @@ This phase translates insights from the analysis into actionable business recomm
 
 ## 📦 Deliverables
 
-*   **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/main/documentation/olist_360_project_scope_of_work.pdf)
-*   **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
+*   **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/main/documentation/olist_360_project_scope_of_work.pdf)
+*   **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
 *   **Interactive Dashboard (Copy/Paste to open a new tab):** `https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439` 
-*   **Executive Insights Presentation:** [Executive Insights Presentation](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/cb896365c2ac65aa0594fa6927d09d65e4bdef7b/presentation/executive_insights_presentation.pptx)
+*   **Executive Insights Presentation:** [Executive Insights Presentation](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/cb896365c2ac65aa0594fa6927d09d65e4bdef7b/presentation/executive_insights_presentation.pptx)
 
 ## 📂 Project Structure
 ```text
