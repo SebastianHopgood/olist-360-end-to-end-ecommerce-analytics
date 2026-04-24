@@ -201,7 +201,7 @@ This phase summarizes key findings from the analysis to highlight business perfo
 I developed 2 overlays in the interacive dashboard to provide stakholders with knowledge to properly navigate the dashboard
 
 **Sales & Seller Strategy Overlay:**
-* ![image alt]()
+* ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/8186ec99c22e7be29bdfdad9ea6144fc220e3ebe/dashboard/dashboard_pictures/sales_and_seller_strategy_overlay.png)
 
 **Logistics & Customer Experience:**
 *  ![image alt]()
