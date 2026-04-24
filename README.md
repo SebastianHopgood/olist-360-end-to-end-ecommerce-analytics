@@ -167,7 +167,7 @@ Logistics & Customer Experience
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/5b7ea85e8a3c60d0d015d540c4132267bc70bd7f/insights/dashboard_pictures/seller_vs_customer_distribution_by_state_visualization_preview.png)
 
 **The Star Schema:**
-* ![image alt]()
+* ![image alt](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/68f66371c9b68ef43e574f97741283b1b60e100b/dashboard/star_schema_modeling_picture.png)
 
 ### Share Phase
 ---
