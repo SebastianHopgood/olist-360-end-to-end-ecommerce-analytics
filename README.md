@@ -208,7 +208,7 @@ I developed 2 overlays in the interacive dashboard to provide stakholders with k
 **Logistics & Customer Experience Overlay:**
 * ![image alt](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/633094a9bcbbbad2e8b28c7171c45930a3aef257/dashboard/dashboard_pictures/logistics_and_customer_experience_overlay.png)
 
-### ACT Phase
+### ACT Phase (Key Insights & Recommnedataions)
 ---
 This phase translates insights from the analysis into actionable business recommendations. It outlines what the business should do next to improve performance in areas such as sales, logistics, and customer experience, based on the patterns and issues identified in the data.
 
@@ -226,9 +226,6 @@ This phase translates insights from the analysis into actionable business recomm
 * A summary of key insights and recommendations from the analysis
 * **Raw Link (Copy/Paste to open a new tab):**
 * `https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439`
-
-## 💡 Key Insights & Recommnedataions 
-- Bullet points on what key insights and what actions are best to take for the company
 
 ## 📦 Deliverables
 
