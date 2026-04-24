@@ -10,8 +10,8 @@ The goal was to simulate a professional data environment by transforming raw dat
 * **Data Engineering:** Used DDL for schema design and DML to engineer new columns (feature engineering) specifically for deep-dive analysis
 * **Analysis & Visualization:** Performed advanced data analysis across SQL and Power BI, joining tables into a Star Schema to power an interactive dashboard and develop data-driven executive insights
 
-**Quick Dashboard Shortcut (Copy/Paste to open a new tab):**
-`https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439`
+**Quick Dashboard Shortcut (Ctrl/Cmd + Click to open in new tab):**
+https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439
 
 ## 🎯 Objectives
 The primary goal is to provide a 360-degree view of the Olist marketplace ecosystem to measure performance, increase operational efficiency, improve customer satisfaction, and optimize seller recruitment strategy. 
