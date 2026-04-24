@@ -214,8 +214,9 @@ This phase translates insights from the analysis into actionable business recomm
 
 📊 **Interactive Dashboard**
 * A summary of key insights and recommendations from the analysis
-* **Raw Link (Copy/Paste to open a new tab):**
-* `https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439`
+* **Raw Link (Ctrl/Cmd + Click to open in new tab):**
+[Interactive Dashboard Preview](https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439)
+
 
 🛒 **Sales & Seller Strategy — Actions**
 * **Regional Seller Acquisition:** Launch a targeted recruitment campaign for sellers in SP, MG, PR, RJ, and SC. By increasing seller density in these high-demand zones, Olist can reduce cross-country shipping distances and improve regional competitiveness
@@ -228,10 +229,10 @@ This phase translates insights from the analysis into actionable business recomm
 * **Seller Performance Tiering:** Incorporate the 1.5-star "late penalty" data into seller KPIs. Sellers who consistently exceed the 12.5-day average lead time should receive lower search rankings to protect the overall marketplace reputation
 
 ## 📦 Deliverables
-*   **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/main/documentation/olist_360_project_scope_of_work.pdf)
-*   **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
-*   **Interactive Dashboard (Copy/Paste to open a new tab):** `https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439` 
-*   **Executive Insights Presentation:** [Executive Insights Presentation](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/cb896365c2ac65aa0594fa6927d09d65e4bdef7b/presentation/executive_insights_presentation.pptx)
+* **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/main/documentation/olist_360_project_scope_of_work.pdf)
+* **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
+* **Interactive Dashboard (Ctrl/Cmd + Click to open in new tab):** [Interactive Dashboard Preview](https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439)
+* **Executive Insights Presentation:** [Executive Insights Presentation](https://github.com/SebastianHopgood/olist-360-end-to-end-ecommerce-analytics/blob/cb896365c2ac65aa0594fa6927d09d65e4bdef7b/presentation/executive_insights_presentation.pptx)
 
 ## 📂 Project Structure
 ```text
