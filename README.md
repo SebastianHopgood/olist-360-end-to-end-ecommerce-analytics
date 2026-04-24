@@ -222,11 +222,8 @@ This phase translates insights from the analysis into actionable business recomm
 
 📊 Data Storytelling Presentation
 * A summary of key insights and recommendations from the analysis
-* **Raw Link (Copy/Paste):**
+* **Raw Link (Copy/Paste to open a new tab):**
 * https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439
-* [View Live Olist 360 E-Commerce Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439)
-* *(Note: To keep this page open, please **Ctrl + Click** to open the dashboard in a new tab)*
-
 
 ## 💡 Key Insights & Recommnedataions 
 - Bullet points on what key insights and what actions are best to take for the company
@@ -235,7 +232,7 @@ This phase translates insights from the analysis into actionable business recomm
 
 *   **Project Strategy:** [Scope of Work](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/main/documentation/olist_360_project_scope_of_work.pdf)
 *   **Technical Codebase:** [SQL Script Repository](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/tree/726fd764070c33632fa165f6461e3dab6ae9b4ce/sql%20scripts)
-*   **Business Intelligence:** [Interactive Power BI Dashboard]()
+*   **Business Intelligence (Copy/Paste to open a new tab):** https://app.powerbi.com/view?r=eyJrIjoiZTE0ZmRkMjAtMmZjMC00NDlmLThjNjctODE3OThhMTYyYmM0IiwidCI6ImRjZWE2OTZmLTk2YjYtNGJkYS05MmFlLTFjZGE1MWY2NjY2ZiJ9&pageName=809a7c16e2189792b439 
 *   **Executive Insights Presentation:** [Executive Insights Presentation](https://github.com/SebastianHopgood/Revenue-Sales-temp-name-/blob/cb896365c2ac65aa0594fa6927d09d65e4bdef7b/presentation/executive_insights_presentation.pptx)
 
 ## 📂 Project Structure
