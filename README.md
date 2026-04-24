@@ -188,7 +188,8 @@ This phase summarizes key findings from the analysis to highlight business perfo
 🚚 Logistics & Customer Experience:
 ---
 **Key Findings:**
-* **The "Late Delivery" Penalty:** There is a direct correlation between shipping delays and customer dissatisfaction. While the average rating is 4.0 stars, a delay of just 1 day drops the average to 3.68. Sentiment collapses at the 3-day mark (2.58 stars) and hits a floor of 1.5 stars for delays of 6+ days
+* **Shipping vs Customer Satisfaction:** There is a direct correlation between shipping delays and customer dissatisfaction. While the average rating is 4.0 stars, a delay of just 1 day drops the average to 3.68. Sentiment collapses at the 3-day mark (2.58 stars) and hits a floor of 1.5 stars for delays of 6+ days
+* **Lead Time vs Customer Satisfaction:** There is no direct correlation between lead time and customer satisfaction
 * **Operational Efficiency:** The average lead time is 12.5 days, with average seller processing taking 2.4 days. Currently, no state averages exceed their estimated delivery dates, resulting in a 92.1% delivery promise accuracy
 * **Seasonal Bottlenecks:** Late order percentages consistently spike during Q1 and Q4 across all years, identifying these periods as high-risk for customer satisfaction due to logistics strain
 
