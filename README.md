@@ -30,7 +30,7 @@ To identify core business needs, I developed SMART (Specific, Measurable, Achiev
 * **GitHub/Git:** Utilized for project documentation, version control of code scripts, and hosting the portfolio
 * **VS Code:** Joined with Git to control project codes files
 
-## 🔄 Project Workflow
+## 🧩 Project Workflow
 
 ### ❓ **ASK Phase**
 ---
